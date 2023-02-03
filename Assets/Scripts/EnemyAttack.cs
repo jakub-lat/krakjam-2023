@@ -15,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Hit()
     {
-        PlayerBehaviour.Current.GotHit();
+        PlayerBehaviour.Current.GotHit(10);
         attacking = false;
         // sound or particles
         Debug.Log("Player hit!");

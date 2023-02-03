@@ -6,7 +6,7 @@ namespace Utils
     {
         public static T Current;
 
-        protected void Awake()
+        protected virtual void Awake()
         {
             if (Current != null)
             {
