@@ -119,6 +119,7 @@ Transform:
   - {fileID: 1986085884961159050}
   - {fileID: 1447988285482447988}
   - {fileID: 5522061116242190475}
+  - {fileID: 1283926960000460637}
   m_Father: {fileID: 2766634955766090337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -174,7 +175,7 @@ MonoBehaviour:
   walkSpeed: 0.7
   walkStepDistance: 1.8
   walkStepInterval: 2
-  attackDistanceMin: 2
+  attackDistanceMin: 1.8
   attackDamage: 10
   knockBackDistance: 2
   knockedSpeed: 2
@@ -443,8 +444,7 @@ Transform:
   m_LocalPosition: {x: 0.2298505, y: -0.71458846, z: 0}
   m_LocalScale: {x: 0.7927937, y: 0.6584836, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1283926960000460637}
+  m_Children: []
   m_Father: {fileID: 5068315656358729305}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -202.14}
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 5793556419282549588}
   m_Layer: 0
   m_Name: AttackCol
-  m_TagString: Enemy
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1031,13 +1031,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8005881461352708945}
-  m_LocalRotation: {x: -0, y: -0, z: 0.98139346, w: -0.19200775}
-  m_LocalPosition: {x: -2.9675941, y: -0.75550246, z: 0.052807562}
-  m_LocalScale: {x: 3.3020635, y: 2.2809749, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.42999992, y: 0.07000001, z: 0}
+  m_LocalScale: {x: 1.2948332, y: 0.7963377, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3760332609133704391}
-  m_RootOrder: 0
+  m_Father: {fileID: 4059816620941631576}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4193440273770056933
 BoxCollider2D:
@@ -1063,7 +1063,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.54, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &5793556419282549588
 MonoBehaviour:

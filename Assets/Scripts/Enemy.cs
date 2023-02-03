@@ -80,6 +80,8 @@ public class Enemy : MonoBehaviour
 
     public void GotHit()
     {
+        Debug.Log("Enemy hit!");
+        
         target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
         anim.SetTrigger("GotHit");
         gotHit = true;
