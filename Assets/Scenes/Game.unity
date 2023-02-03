@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348513987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -1.3512, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -520,7 +520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643534965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -1.3512, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -683,13 +683,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 134092010, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: moveSpeed
-      value: 10
+    - target: {fileID: 1267049270, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.491
       objectReference: {fileID: 0}
+    - target: {fileID: 5015243942595675648, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -697,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.3512
       objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_LocalPosition.z
@@ -732,35 +740,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675650, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: f0dfdc40083a96248a8b0fd0f9ebf6f7, type: 2}
-    - target: {fileID: 5015243942595675651, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Mass
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5015243942595675651, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: f0dfdc40083a96248a8b0fd0f9ebf6f7, type: 2}
-    - target: {fileID: 5015243942595675651, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Interpolate
+      propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5015243942595675651, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_UseAutoMass
+    - target: {fileID: 5015243942595675650, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5015243942595675650, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675651, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_SleepingMode
-      value: 0
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675653, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5015243942595675653, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
