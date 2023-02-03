@@ -1,13 +1,31 @@
-﻿using UnityEngine;
+﻿using System;
+using UI;
+using UnityEngine;
 using Utils;
 
 namespace Player
 {
     public class PlayerBehaviour : MonoSingleton<PlayerBehaviour>
     {
-        public void GotHit()
+        [SerializeField] private float maxHealth;
+        private float health;
+
+        public float Health => health;
+
+        protected override void Awake()
         {
-            // todo
+            base.Awake();
+            health = maxHealth;
+        }
+
+        public void GotHit(float amount)
+        {
+            health = Math.Max(0, health - amount);
+            HealthUI.Current.SetAmount(health / maxHealth);
+            if (health == 0)
+            {
+                Debug.Log("Player dead");
+            }
         }
     }
 }
