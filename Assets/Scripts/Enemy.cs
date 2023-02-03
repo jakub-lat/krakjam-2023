@@ -27,6 +27,9 @@ public class Enemy : MonoBehaviour
     private EnemyAttack _enemyAttack;
     private bool attacking = false;
     private bool gotHit = false;
+    private bool activated = false;
+
+    public void Activate() { activated = true;}
     
     void Start()
     {
@@ -44,7 +47,7 @@ public class Enemy : MonoBehaviour
         ppos.y = transform.position.y;
         ppos.z = transform.position.z;
 
-        if (!attacking && !gotHit)
+        if (!attacking && !gotHit && activated)
         {
             if (transform.position.x < ppos.x) skeleton.transform.localScale = new Vector3(-1, 1, 1);
             else skeleton.transform.localScale = new Vector3(1, 1, 1);
