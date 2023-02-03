@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 {
     private GameObject player;
     public GameObject skeleton;
+    public float startingHealth = 100;
+    private float health;
     [Header("Walking")]
     public float walkSpeed=2;
     public float walkStepDistance=2;
@@ -23,14 +25,15 @@ public class Enemy : MonoBehaviour
     private bool dead = false;
     private Animator anim;
     private EnemyAttack _enemyAttack;
-    public bool attacking = false;
-    public bool gotHit = false;
+    private bool attacking = false;
+    private bool gotHit = false;
     
     void Start()
     {
         player = PlayerMovement.Current.gameObject;
         anim = GetComponent<Animator>();
         _enemyAttack = GetComponentInChildren<EnemyAttack>();
+        health = startingHealth;
     }
 
     private Vector3 ppos;
@@ -66,6 +69,7 @@ public class Enemy : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.T) && !attacking) anim.SetTrigger("Attack");
         if(Input.GetKeyDown(KeyCode.H)) GotHit();
+        if(Input.GetKeyDown(KeyCode.G)) Death();
     }
 
     private Vector3 target;
@@ -78,21 +82,42 @@ public class Enemy : MonoBehaviour
         anim.SetTrigger("WalkStep");
     }
 
-    public void GotHit()
+    void Death()
+    {
+        dead = true;
+        anim.SetTrigger("Death");
+    }
+
+    public void GotHit(float amount=0)
     {
         Debug.Log("Enemy hit!");
         
-        target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
-        anim.SetTrigger("GotHit");
-        gotHit = true;
+        if(dead) return;
         attacking = false;
+
+        health -= amount;
+        if (health <= 0)
+        {
+            health = 0;
+            Death();
+        }
+        else
+        {
+            target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
+            anim.SetTrigger("GotHit");
+            gotHit = true;
+        }
     }
 
     public void EndGotHit()
     {
         gotHit = false;
     }
-
+    
+    public void EndDeath()
+    {
+        GetComponent<Collider2D>().enabled = false;
+    }
 
     public void StartAttack()
     {
