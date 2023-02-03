@@ -28,8 +28,8 @@ namespace Player
         private void Move()
         {
             var horizontal = Input.GetAxis("Horizontal");
-            var move = new Vector2(horizontal * moveSpeed * Time.deltaTime, 0);
-            transform.Translate(move);
+            // rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
         }
 
         private void Jump()
