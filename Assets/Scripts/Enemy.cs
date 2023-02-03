@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -14,7 +15,7 @@ public class Enemy : MonoBehaviour
     
     void Start()
     {
-        player = Character.instance.gameObject;
+        player = PlayerMovement.Current.gameObject;
         anim = GetComponent<Animator>();
     }
     

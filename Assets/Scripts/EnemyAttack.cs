@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -14,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Hit()
     {
-        Character.instance.GotHit();
+        PlayerBehaviour.Current.GotHit();
         attacking = false;
         // sound or particles
     }
