@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private GameObject player;
+    public GameObject skeleton;
     [Header("Walking")]
     public float walkSpeed=2;
     public float walkStepDistance=2;
@@ -42,6 +43,9 @@ public class Enemy : MonoBehaviour
 
         if (!attacking && !gotHit)
         {
+            if (transform.position.x < ppos.x) skeleton.transform.localScale = new Vector3(-1, 1, 1);
+            else skeleton.transform.localScale = new Vector3(1, 1, 1);
+            
             walkingTimer -= Time.deltaTime;
             if (walkingTimer <= 0) MoveTowardsPlayer();
             transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * walkSpeed);
