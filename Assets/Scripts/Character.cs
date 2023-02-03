@@ -69,6 +69,11 @@ public class Character : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, transform.position + change, Time.deltaTime);
     }
 
+    public void GotHit()
+    {
+        
+    }
+
     void Die()
     {
         if (dead) return;
@@ -103,9 +108,6 @@ private void OnTriggerEnter2D(Collider2D col)
         if (col.CompareTag("Enemy"))
         {
             Die();
-            Destroy(col.gameObject);
-        } else if (col.CompareTag("Point"))
-        {
             Destroy(col.gameObject);
         }
     }

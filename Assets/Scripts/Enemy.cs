@@ -4,21 +4,39 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Vector3 target;
-    public float speed=2;
+    private GameObject player;
+    public float walkSpeed=2;
+    public float walkStepDistance=2;
+    public float walkStepInterval=0.2f;
+
+    private bool dead = false;
+    private Animator anim;
+    
     void Start()
     {
-        target = Character.instance.transform.position;
-
-        target += Character.instance.transform.position - transform.position;
-        
-        transform.right = target - transform.position;
-        
-        Destroy(gameObject,10);
+        player = Character.instance.gameObject;
+        anim = GetComponent<Animator>();
     }
     
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, target, speed*Time.deltaTime);
+        if (dead) return;
+
+        walkingTimer -= Time.deltaTime;
+        if(walkingTimer<=0) MoveTowardsPlayer();
+        transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime*walkSpeed);
+    }
+
+    private Vector3 target;
+    private float walkingTimer = 0;
+    void MoveTowardsPlayer()
+    {
+        Vector3 pos = player.transform.position;
+        pos.y = transform.position.y;
+        pos.z = transform.position.z;
+        walkingTimer = walkStepInterval;
+        target = Vector3.MoveTowards(transform.position, pos, walkStepDistance) ;
+        
+        anim.SetTrigger("WalkStep");
     }
 }
