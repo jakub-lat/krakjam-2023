@@ -173,6 +173,12 @@ MonoBehaviour:
   walkSpeed: 0.7
   walkStepDistance: 1.8
   walkStepInterval: 2
+  attackDistanceMin: 2
+  attackDamage: 10
+  knockBackDistance: 2
+  knockedSpeed: 2
+  attacking: 0
+  gotHit: 0
 --- !u!50 &3333651160183728299
 Rigidbody2D:
   serializedVersion: 4
@@ -1012,7 +1018,7 @@ GameObject:
   - component: {fileID: 5793556419282549588}
   m_Layer: 0
   m_Name: AttackCol
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

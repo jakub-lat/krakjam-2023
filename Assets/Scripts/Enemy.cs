@@ -15,10 +15,15 @@ public class Enemy : MonoBehaviour
     public float attackDistanceMin = 2f;
     public float attackDamage = 10;
 
+    [Header("GotHit")] 
+    public float knockBackDistance = 2f;
+    public float knockedSpeed = 2f;
+
     private bool dead = false;
     private Animator anim;
     private EnemyAttack _enemyAttack;
-    private bool attacking = false;
+    public bool attacking = false;
+    public bool gotHit = false;
     
     void Start()
     {
@@ -35,7 +40,7 @@ public class Enemy : MonoBehaviour
         ppos.y = transform.position.y;
         ppos.z = transform.position.z;
 
-        if (!attacking)
+        if (!attacking && !gotHit)
         {
             walkingTimer -= Time.deltaTime;
             if (walkingTimer <= 0) MoveTowardsPlayer();
@@ -49,19 +54,39 @@ public class Enemy : MonoBehaviour
             }
         }
 
+        if (gotHit)
+        {
+            transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * knockedSpeed);
+        }
+        
+
         if(Input.GetKeyDown(KeyCode.T) && !attacking) anim.SetTrigger("Attack");
+        if(Input.GetKeyDown(KeyCode.H)) GotHit();
     }
 
     private Vector3 target;
     private float walkingTimer = 0;
     void MoveTowardsPlayer()
     {
-        
         walkingTimer = walkStepInterval;
         target = Vector3.MoveTowards(transform.position, ppos, walkStepDistance) ;
         
         anim.SetTrigger("WalkStep");
     }
+
+    public void GotHit()
+    {
+        target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
+        anim.SetTrigger("GotHit");
+        gotHit = true;
+        attacking = false;
+    }
+
+    public void EndGotHit()
+    {
+        gotHit = false;
+    }
+
 
     public void StartAttack()
     {
