@@ -116,7 +116,8 @@ public class Enemy : MonoBehaviour
     
     public void EndDeath()
     {
-        GetComponent<Collider2D>().enabled = false;
+        //GetComponent<Collider2D>().enabled = false;
+        gameObject.layer = 7;
     }
 
     public void StartAttack()
