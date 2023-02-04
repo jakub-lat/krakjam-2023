@@ -123,7 +123,7 @@ namespace Player
             Vector3 endPos;
             if (IsNearHeart)
             {
-                endPos = new Vector2(pos.x, pos.y);
+                endPos = (Vector2)pos + ((Vector2)pos - (Vector2)rootHeart.position).normalized * 15f;
             } else
             {
                 ssc.spline.SetLeftTangent(1, -transform.up * pointTangentScale);
