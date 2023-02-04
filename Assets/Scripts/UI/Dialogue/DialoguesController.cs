@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UI.Dialogue;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utils;
 
@@ -19,16 +21,14 @@ public class DialogueElement
     public string personName;
     public string contentText;
     public float timeout = 1.5f;
+    public int displayerIndex;
 }
 
 
 public class DialoguesController : MonoSingleton<DialoguesController>
 {
     public Queue<DialogueElement> dialogues;
-    public GameObject dialogueBox;
-
-    public Text header;
-    public Text content;
+    public List<DialogueDisplayer> dialogueDisplayers;
 
     private DialogueElement current;
     private float hideTimer = 0;
@@ -40,18 +40,28 @@ public class DialoguesController : MonoSingleton<DialoguesController>
         Next();
     }
 
-    public void Show(bool show = true)
+    public void Show(int displayerIndex, bool show = true)
     {
-        dialogueBox.SetActive(show);
+        foreach (var d in dialogueDisplayers)
+        {
+            d.gameObject.SetActive(false);
+        }
+
         if (show)
         {
-            header.text = current.personName;
-            content.text = current.contentText;
+            var displayer = dialogueDisplayers[displayerIndex];
+            displayer.gameObject.SetActive(true);
+
+            displayer.header.text = current.personName;
+            displayer.content.text = current.contentText;
 
             hideTimer = current.timeout;
             hidden = false;
         }
-        else hidden = true;
+        else
+        {
+            hidden = true;
+        }
     }
 
     private void Update()
@@ -69,13 +79,13 @@ public class DialoguesController : MonoSingleton<DialoguesController>
     {
         if (dialogues.Count <= 0)
         {
-            Show(false);
+            Show(-1, false);
             return;
         }
 
         current = dialogues.First();
         dialogues.Dequeue();
-        Show();
+        Show(current.displayerIndex);
     }
 
     public void AddDialogue(string t, string p = "", float tt = 1.5f)
