@@ -59,10 +59,10 @@ public class DialoguesController : MonoSingleton<DialoguesController>
         hideTimer -= Time.deltaTime;
         if (!hidden && hideTimer <= 0)
         {
-            Show(false);
+            Next();
         }
         
-        if(Input.GetKeyDown(KeyCode.Space)) Next();
+        if(Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.E))  Next();
     }
 
     public void Next()

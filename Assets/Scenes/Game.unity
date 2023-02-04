@@ -1505,8 +1505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -21.18}
-  m_SizeDelta: {x: 1378.66, y: 72}
+  m_AnchoredPosition: {x: -0.000015259, y: -19}
+  m_SizeDelta: {x: 1609.1359, y: 49.252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &977425756
 MonoBehaviour:
@@ -1530,7 +1530,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1541,7 +1541,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oto i ja! Przyby\u0142em uratowa\u0107 to zat\u0119ch\u0142e \u015Bciernisko!"
+  m_Text: "Przez apokalips\u0119 potwor\xF3w ludzko\u015B\u0107 chyli si\u0119 ku
+    ko\u0144cowi. Musz\u0119 temu zaradzi\u0107. "
 --- !u!222 &977425757
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1706,7 +1707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.09, y: 29.2}
+  m_AnchoredPosition: {x: -138, y: 29.2}
   m_SizeDelta: {x: 1378.66, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318784840
@@ -2395,6 +2396,99 @@ PrefabInstance:
     - target: {fileID: 1133779520086205898, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].timeout
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].timeout
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].timeout
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[4].timeout
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[5].timeout
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[6].timeout
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[4].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[5].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[6].personName
+      value: "Gu\u015Blarz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].contentText
+      value: "Ca\u0142e \u017Cycie pochodzi od \u017Ar\xF3d\u0142a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].contentText
+      value: "\u0179r\xF3d\u0142em jest Korze\u0144 Ludzko\u015Bci, kt\xF3ry nadaje
+        si\u0142y \u017Cyciowymi impulsami"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].contentText
+      value: "Istnieje r\xF3nie\u017C przeciwie\u0144stwo, najwi\u0119ksza potworno\u015B\u0107
+        kt\xF3ra dotkn\u0119\u0142a ten \u015Bwiat"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].contentText
+      value: "Zombie. Te nieumar\u0142e stwory ci\u0105gn\u0105 swoj\u0105 moc z
+        Korzenia Nie\u017Cycia. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[4].contentText
+      value: "Przez apokalips\u0119 potwor\xF3w ludzko\u015B\u0107 chyli si\u0119
+        ku ko\u0144cowi. Musz\u0119 temu zaradzi\u0107."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[5].contentText
+      value: "Wyruszam na samob\xF3jcz\u0105 misj\u0119."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[6].contentText
+      value: "Zniszcz\u0119 \u017Ar\xF3d\u0142o z\u0142a i pomszcz\u0119 wszystkich
+        niewinnych kt\xF3rzy oddali swe dusze w r\u0119ce tych.... tych..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741731992933059564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
