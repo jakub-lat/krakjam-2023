@@ -73,7 +73,9 @@ GameObject:
   - component: {fileID: 1455146231}
   - component: {fileID: 1455146232}
   - component: {fileID: 1455146233}
+  - component: {fileID: 1392013058203703084}
   - component: {fileID: 1455146234}
+  - component: {fileID: 4430180959249690540}
   m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
@@ -174,6 +176,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.04, y: 7.8159895}
   m_EdgeRadius: 0
+--- !u!114 &1392013058203703084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb727ab483f40a99e653aa7fb327a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1455146232}
 --- !u!114 &1455146234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,12 +201,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68c8f741aa4474bd2049fbb28eb32f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 20
-  collider: {fileID: 1455146233}
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  cooldown: 1
+  weaponName: Stick
+  weaponIndex: 0
+  sprite: {fileID: 7482667652216324306, guid: e4d4dd121d143244aaabdd25f0466f2f, type: 3}
+  weakAttackDamage: 15
+  weakAttackCooldown: 0.3
+  strongAttackDamage: 35
+  strongAttackCooldown: 0.6
+--- !u!114 &4430180959249690540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e68c8f741aa4474bd2049fbb28eb32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: Test
+  weaponIndex: 1
+  sprite: {fileID: -9095717837082945937, guid: 2cf89a75f3e72f843b3d5c6433a3945e, type: 3}
+  weakAttackDamage: 15
+  weakAttackCooldown: 0.3
+  strongAttackDamage: 35
+  strongAttackCooldown: 0.6
 --- !u!1 &2022964399
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,8 +326,8 @@ GameObject:
   - component: {fileID: 134092010}
   - component: {fileID: 7606666028574707769}
   - component: {fileID: 5969519689244460117}
-  - component: {fileID: 1733003293}
   - component: {fileID: 2430747809558882580}
+  - component: {fileID: 1733003293}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -379,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529313f32184d809b796e2caced5065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 7
   jumpForce: 120
   groundMask:
     serializedVersion: 2
@@ -421,14 +456,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!81 &1733003293
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5015243942595675653}
-  m_Enabled: 1
 --- !u!70 &2430747809558882580
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -445,6 +472,14 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.27}
   m_Size: {x: 2, y: 4.47}
   m_Direction: 0
+--- !u!81 &1733003293
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015243942595675653}
+  m_Enabled: 1
 --- !u!1 &5995733490525469625
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +617,30 @@ PrefabInstance:
     - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_SortingLayerID
       value: 889009775
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_LocalAABB.m_Center.x
+      value: 72.482994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: -25.667175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.x
+      value: 24.902258
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.y
+      value: 29.444351
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686366008889601639, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_Spline.m_ControlPoints.Array.data[1].position.x
+      value: 78.872284
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686366008889601639, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_Spline.m_ControlPoints.Array.data[1].position.y
+      value: -5.05001
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.data[0]
