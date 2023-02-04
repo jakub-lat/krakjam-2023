@@ -37,6 +37,7 @@ public class DialoguesController : MonoSingleton<DialoguesController>
     private void Start()
     {
         dialogues = new Queue<DialogueElement>();
+        Next();
     }
 
     public void Show(bool show = true)
@@ -93,4 +94,10 @@ public class DialoguesController : MonoSingleton<DialoguesController>
             Next();
         }
     }
+
+    public void ClearDialogues()
+    {
+        dialogues.Clear();
+    }
+    
 }
