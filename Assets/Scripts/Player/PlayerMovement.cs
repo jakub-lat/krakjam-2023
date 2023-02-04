@@ -70,9 +70,19 @@ namespace Player
             }
         }
 
+        private bool isJumping = false;
         private void Jump()
         {
-            if (!Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.Space)) return;
+            if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.Space))
+            {
+                isJumping = false;
+                return;
+            }
+            if (isJumping) return;
+
+            isJumping = true;
+            
+            Debug.Log("jump");
 
             var isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundMask);
             if (!isGrounded) return;
