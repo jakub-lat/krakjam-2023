@@ -51,20 +51,24 @@ public class Enemy : MonoBehaviour
         if (!attacking && !gotHit && activated)
         {
             timer -= Time.deltaTime;
+            walkingTimer -= Time.deltaTime;
             
             if (transform.position.x < ppos.x) skeleton.transform.localScale = new Vector3(-1, 1, 1);
             else skeleton.transform.localScale = new Vector3(1, 1, 1);
             
-            walkingTimer -= Time.deltaTime;
-            if (walkingTimer <= 0) MoveTowardsPlayer();
-            transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * walkSpeed);
-            
-            if (Vector3.Distance(ppos, transform.position) <= attackDistanceMin && timer<=0)
+            if (Vector3.Distance(ppos, transform.position)<= attackDistanceMin  )
             {
-                timer = attackCooldown;
-                //Make attack
-                anim.SetTrigger("Attack");
-                attacking = true;
+                if(timer<=0) {
+                    timer = attackCooldown;
+                    //Make attack
+                    anim.SetTrigger("Attack");
+                    attacking = true;
+                }
+            }
+            else
+            {
+                if (walkingTimer <= 0) MoveTowardsPlayer();
+                transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * walkSpeed);
             }
         }
 

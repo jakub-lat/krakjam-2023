@@ -23,14 +23,18 @@ namespace Player
         private float lerpTo;
         private bool isLerping;
 
+        private PlayerBehaviour pb;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             vCamTransposer = VCamInstance.Current.GetCinemachineComponent<CinemachineTransposer>();
+            pb = PlayerBehaviour.Current;
         }
 
         private void Update()
         {
+            if (pb.dead) return;
             Move();
             Jump();
         }
