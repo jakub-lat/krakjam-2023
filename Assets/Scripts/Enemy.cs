@@ -104,19 +104,22 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy hit!");
         
         if(dead) return;
-        attacking = false;
 
         health -= amount;
         if (health <= 0)
         {
             health = 0;
+            attacking = false;
             Death();
         }
         else
         {
-            target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
-            anim.SetTrigger("GotHit");
-            gotHit = true;
+            if (!attacking)
+            {
+                target = transform.position + ((transform.position - ppos).normalized * knockBackDistance);
+                anim.SetTrigger("GotHit");
+                gotHit = true;
+            }
         }
     }
 
