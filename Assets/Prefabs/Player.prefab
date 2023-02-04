@@ -687,6 +687,8 @@ MonoBehaviour:
   weaponHeavy: {fileID: 8300000, guid: 2cd56ac46ed9a7d48b9a0973354c880c, type: 3}
   gotHit: {fileID: 8300000, guid: c2c16c1b1915c4a4abbd398e36bc0ab6, type: 3}
   pickup: {fileID: 8300000, guid: c8d3286e40b6d08419e379155e78f00e, type: 3}
+  jump: {fileID: 8300000, guid: 58432fb0a6150a04e922d070459c13bc, type: 3}
+  land: {fileID: 8300000, guid: 1c7633a28c1169e40b14fc202ab27160, type: 3}
 --- !u!81 &1733003293
 AudioListener:
   m_ObjectHideFlags: 0

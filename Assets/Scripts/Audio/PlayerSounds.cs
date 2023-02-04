@@ -15,6 +15,8 @@ namespace Audio
         [SerializeField] private AudioClip weaponHeavy;
         [SerializeField] private AudioClip gotHit;
         [SerializeField] private AudioClip pickup;
+        [SerializeField] private AudioClip jump;
+        [SerializeField] private AudioClip land;
 
         private bool isStopping = false;
 
@@ -53,6 +55,16 @@ namespace Audio
         public void Pickup()
         {
             source.PlayOneShot(pickup);
+        }
+
+        public void Jump()
+        {
+            source.PlayOneShot(jump);
+        }
+
+        public void Land()
+        {
+            source.PlayOneShot(land);
         }
     }
 }
