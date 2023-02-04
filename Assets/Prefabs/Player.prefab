@@ -379,7 +379,7 @@ MonoBehaviour:
   jumpForce: 120
   groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 512
   groundCheck: {fileID: 1267049270}
   playerBody: {fileID: 2022964400}
 --- !u!114 &7606666028574707769
