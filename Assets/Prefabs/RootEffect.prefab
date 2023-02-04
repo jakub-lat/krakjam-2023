@@ -56,7 +56,7 @@ MonoBehaviour:
   animDuration: 1
   interval: 0
   ssc: {fileID: 7686366008889601639}
-  heartNearbyMinDistance: 40
+  heartNearbyMinDistance: 25
 --- !u!1 &8449386636995340791
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Utils;
@@ -22,6 +23,9 @@ namespace Player
         private float lerpFrom;
         private float lerpTo;
         private bool isLerping;
+        private bool isGrounded;
+        private bool wasGrounded;
+        private bool isJumping = false;
 
         private PlayerBehaviour pb;
 
@@ -35,6 +39,8 @@ namespace Player
         private void Update()
         {
             if (pb.dead) return;
+
+            IsGrounded();
             Move();
             Jump();
         }
@@ -63,14 +69,28 @@ namespace Player
                 vCamTransposer.m_FollowOffset = offset;
 
                 lerpT += Time.deltaTime * 1.2f;
+                
+                PlayerSounds.Current.StartWalking();
             }
             else
             {
                 isLerping = false;
+                PlayerSounds.Current.StopWalking();
             }
         }
 
-        private bool isJumping = false;
+        private void IsGrounded()
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundMask);
+
+            if (!wasGrounded && isGrounded)
+            {
+                PlayerSounds.Current.Land();
+            }
+            
+            wasGrounded = isGrounded;
+        }
+
         private void Jump()
         {
             if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.Space))
@@ -82,12 +102,12 @@ namespace Player
 
             isJumping = true;
             
-            Debug.Log("jump");
 
-            var isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundMask);
             if (!isGrounded) return;
 
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            
+            PlayerSounds.Current.Jump();
         }
     }
 }
