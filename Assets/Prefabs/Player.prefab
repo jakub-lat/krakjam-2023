@@ -73,7 +73,9 @@ GameObject:
   - component: {fileID: 1455146231}
   - component: {fileID: 1455146232}
   - component: {fileID: 1455146233}
+  - component: {fileID: 1392013058203703084}
   - component: {fileID: 1455146234}
+  - component: {fileID: 4430180959249690540}
   m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
@@ -174,6 +176,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.04, y: 7.8159895}
   m_EdgeRadius: 0
+--- !u!114 &1392013058203703084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb727ab483f40a99e653aa7fb327a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1455146232}
 --- !u!114 &1455146234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,10 +201,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68c8f741aa4474bd2049fbb28eb32f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 1455146233}
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
+  weaponName: Stick
+  weaponIndex: 0
+  sprite: {fileID: 7482667652216324306, guid: e4d4dd121d143244aaabdd25f0466f2f, type: 3}
+  weakAttackDamage: 15
+  weakAttackCooldown: 0.3
+  strongAttackDamage: 35
+  strongAttackCooldown: 0.6
+--- !u!114 &4430180959249690540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455146230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e68c8f741aa4474bd2049fbb28eb32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: Test
+  weaponIndex: 1
+  sprite: {fileID: -9095717837082945937, guid: 2cf89a75f3e72f843b3d5c6433a3945e, type: 3}
   weakAttackDamage: 15
   weakAttackCooldown: 0.3
   strongAttackDamage: 35

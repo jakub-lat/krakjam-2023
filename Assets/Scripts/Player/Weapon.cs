@@ -11,16 +11,21 @@ namespace Player
         Strong
     }
 
-    public class PlayerAttack : MonoSingleton<PlayerAttack>
+    public class Weapon : MonoBehaviour
     {
-        [SerializeField] private new Collider2D collider;
-        [SerializeField] private LayerMask enemyLayerMask;
+        public string weaponName;
+        public int weaponIndex;
+        public Sprite sprite;
+
+        // [SerializeField] private new Collider2D collider;
+        // [SerializeField] private LayerMask enemyLayerMask;
 
         [SerializeField] private float weakAttackDamage = 20f;
         [SerializeField] private float weakAttackCooldown = 0.2f;
 
         [SerializeField] private float strongAttackDamage = 35f;
         [SerializeField] private float strongAttackCooldown = 0.7f;
+
 
         private PlayerBehaviour player;
         private AttackType lastAttackType;

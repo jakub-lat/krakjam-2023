@@ -12,7 +12,6 @@ namespace Player
         private Animator anim;
         private bool gotHit = false;
         private bool attacking = false;
-        private PlayerAttack _playerAttack;
         public bool dead = false;
 
         public float Health => health;
@@ -28,7 +27,6 @@ namespace Player
 
         private void Start()
         {
-            _playerAttack = PlayerAttack.Current;
             deathUI.enabled = false;
         }
 
@@ -70,7 +68,7 @@ namespace Player
         public void EndAttack()
         {
             attacking = false;
-            _playerAttack.EndAttack();
+            WeaponController.CurrentWeapon.EndAttack();
         }
     }
 }
