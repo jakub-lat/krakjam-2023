@@ -1,4 +1,4 @@
-﻿%YAML 1.1
+%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &685144993428314305
 GameObject:
@@ -52,10 +52,11 @@ MonoBehaviour:
   rootTopYOffset: -1.5
   rootBottomYOffset: -15
   pointHeight: 0.7
-  pointTangentScale: 4
+  pointTangentScale: 15
   animDuration: 1
   interval: 0
   ssc: {fileID: 7686366008889601639}
+  heartNearbyMinDistance: 40
 --- !u!1 &8449386636995340791
 GameObject:
   m_ObjectHideFlags: 0

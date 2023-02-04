@@ -19,7 +19,7 @@ public class EnemyAttack : MonoBehaviour
         PlayerBehaviour.Current.GotHit(dmg);
         attacking = false;
         // sound or particles
-        Debug.Log("Player hit!");
+        // Debug.Log("Player hit!");
     }
 
     private void OnTriggerStay2D(Collider2D col)
