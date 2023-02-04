@@ -1,16 +1,29 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Utils;
 
 namespace Player
 {
+    public enum AttackType
+    {
+        Weak,
+        Strong
+    }
+
     public class PlayerAttack : MonoSingleton<PlayerAttack>
     {
-        [SerializeField] private float attackDamage = 20f;
         [SerializeField] private new Collider2D collider;
         [SerializeField] private LayerMask enemyLayerMask;
-        [SerializeField] private float cooldown = 1f;
+
+        [SerializeField] private float weakAttackDamage = 20f;
+        [SerializeField] private float weakAttackCooldown = 0.2f;
+
+        [SerializeField] private float strongAttackDamage = 35f;
+        [SerializeField] private float strongAttackCooldown = 0.7f;
+
         private PlayerBehaviour player;
+        private AttackType lastAttackType;
 
         private void Update()
         {
@@ -26,14 +39,26 @@ namespace Player
 
         private float timer = 0;
         private bool attacking = false;
+
         private void Attack()
         {
             timer -= Time.deltaTime;
-            if (!Input.GetMouseButtonDown(0) || timer>=0) return;
-            if (!player.Attack()) return;
+            if (timer >= 0) return;
 
-            timer = cooldown;
+            AttackType? type = Input.GetMouseButtonDown(0)
+                ? AttackType.Weak
+                : Input.GetMouseButtonDown(1)
+                    ? AttackType.Strong
+                    : null;
+
+            if (type == null) return;
+            var t = type.Value;
+
+            if (!player.Attack(t)) return;
+
+            timer = t == AttackType.Strong ? strongAttackCooldown : weakAttackCooldown;
             attacking = true;
+            lastAttackType = t;
 
             // var res = Physics2D.OverlapBox(transform.position,
             //     new Vector2(collider.bounds.size.x * transform.lossyScale.x,
@@ -51,7 +76,8 @@ namespace Player
         {
             if (attacking && other.CompareTag("Enemy"))
             {
-                other.GetComponent<Enemy>().GotHit(attackDamage);
+                other.GetComponent<Enemy>()
+                    .GotHit(lastAttackType == AttackType.Strong ? strongAttackDamage : weakAttackDamage);
                 attacking = false;
             }
         }

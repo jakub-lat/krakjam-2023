@@ -50,7 +50,7 @@ namespace Player
             }
         }
 
-        public bool Attack()
+        public bool Attack(AttackType type)
         {
             if (gotHit || attacking) return false;
             anim.SetTrigger("Attack");

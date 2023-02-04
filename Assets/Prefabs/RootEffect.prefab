@@ -50,9 +50,9 @@ MonoBehaviour:
   rootSprite: {fileID: 8449386638112085964}
   lightYOffset: 9
   rootTopYOffset: -1.5
-  rootBottomYOffset: -15
+  rootBottomYOffset: -12
   pointHeight: 0.7
-  pointTangentScale: 15
+  pointTangentScale: 7
   animDuration: 1
   interval: 0
   ssc: {fileID: 7686366008889601639}
