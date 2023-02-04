@@ -438,6 +438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   pulseHealthBoost: 4
+  source: {fileID: 4154051034745347787}
+  pulseClip: {fileID: 8300000, guid: d7ec12cb58cca1740834c065f670fd42, type: 3}
   deathUI: {fileID: 0}
   dead: 0
 --- !u!95 &5969519689244460117

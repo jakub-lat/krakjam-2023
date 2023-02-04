@@ -10,6 +10,10 @@ namespace Player
     {
         [SerializeField] private float maxHealth;
         [SerializeField] private float pulseHealthBoost = 10f;
+
+        [SerializeField] private AudioSource source;
+        [SerializeField] private AudioClip pulseClip;
+        
         [Header("UI")] public Canvas deathUI;
         
 
@@ -86,7 +90,7 @@ namespace Player
         private void OnPulse()
         {
             Health += pulseHealthBoost;
-            Debug.Log("onpulse");
+            source.PlayOneShot(pulseClip);
         }
 
         public void EndGotHit()
