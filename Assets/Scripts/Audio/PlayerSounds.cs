@@ -9,7 +9,8 @@ namespace Audio
     {
         [SerializeField] private AudioSource source;
         [SerializeField] private AudioSource walkSource;
-
+        
+        [SerializeField] private AudioClip walkStep;
         [SerializeField] private AudioClip death;
         [SerializeField] private AudioClip weaponLight;
         [SerializeField] private AudioClip weaponHeavy;
@@ -22,9 +23,15 @@ namespace Audio
 
         public void StartWalking()
         {
+            return;
             if (walkSource.isPlaying) return;
             walkSource.volume = 1;
             walkSource.Play();
+        }
+        
+        public void WalkStep()
+        {
+            source.PlayOneShot(walkStep);
         }
 
         public void StopWalking()

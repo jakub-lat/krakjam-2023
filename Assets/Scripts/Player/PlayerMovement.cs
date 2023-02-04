@@ -28,12 +28,14 @@ namespace Player
         private bool isJumping = false;
 
         private PlayerBehaviour pb;
+        private Animator anim;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             vCamTransposer = VCamInstance.Current.GetCinemachineComponent<CinemachineTransposer>();
             pb = PlayerBehaviour.Current;
+            anim = GetComponent<Animator>();
         }
 
         private void Update()
@@ -56,7 +58,10 @@ namespace Player
                 playerBody.localRotation = Quaternion.Euler(new Vector3(playerBody.localRotation.eulerAngles.x,
                     horizontal > 0 ? 0 : 180, playerBody.localRotation.eulerAngles.z));
 
-                if (!isLerping)
+
+                anim.SetBool("Walking",isGrounded);
+
+                    if (!isLerping)
                 {
                     lerpFrom = vCamTransposer.m_FollowOffset.x;
                     lerpTo = Mathf.Sign(horizontal) * 3.5f;
@@ -76,6 +81,7 @@ namespace Player
             {
                 isLerping = false;
                 PlayerSounds.Current.StopWalking();
+                anim.SetBool("Walking", false);
             }
         }
 

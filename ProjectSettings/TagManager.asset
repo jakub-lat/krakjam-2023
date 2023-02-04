@@ -49,3 +49,6 @@ TagManager:
   - name: EnemyRootEffect
     uniqueID: 555184759
     locked: 0
+  - name: Player
+    uniqueID: 1405604575
+    locked: 0
