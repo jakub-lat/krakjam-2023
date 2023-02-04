@@ -28,14 +28,21 @@ namespace Player
 
         [SerializeField] private SpriteShapeController ssc;
 
+        [SerializeField] private float heartNearbyMinDistance = 10f;
+
+        private Transform rootHeart;
         private Transform follow;
 
         private TweenerCore<Vector3, Vector3, VectorOptions> tween;
 
         private float startX;
 
+        private bool IsNearHeart => Vector3.Distance(follow.position, rootHeart.position) <= heartNearbyMinDistance;
+
         private void Start()
         {
+            rootHeart = HeartInstance.Current.transform;
+            
             light.transform.localPosition = new Vector2(0, -100);
             StartCoroutine(Run());
             follow = transform.parent;
@@ -46,11 +53,15 @@ namespace Player
 
             ssc.spline.Clear();
             var pos = follow.position;
-            ssc.spline.InsertPointAt(0, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootBottomYOffset)));
+            // ssc.spline.InsertPointAt(0, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootBottomYOffset)));
+            ssc.spline.InsertPointAt(0, rootHeart.position);
             ssc.spline.SetHeight(0, pointHeight);
+            ssc.spline.SetTangentMode(0, ShapeTangentMode.Linear);
+
             ssc.spline.InsertPointAt(1, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootTopYOffset)));
             ssc.spline.SetHeight(1, pointHeight);
             ssc.spline.SetTangentMode(1, ShapeTangentMode.Broken);
+            
             startX = pos.x;
         }
 
@@ -58,10 +69,25 @@ namespace Player
         {
             var pos = follow.position;
 
-            ssc.spline.SetPosition(0, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootBottomYOffset)));
-
-            light.transform.position = new Vector2(pos.x, pos.y - lightYOffset * 2);
-            tween = light.transform.DOMove(new Vector2(pos.x, pos.y + lightYOffset), animDuration)
+            Vector3 endPos;
+            if (IsNearHeart)
+            {
+                light.transform.position = rootHeart.position;
+                ssc.spline.SetLeftTangent(1, Vector3.zero);
+                // Debug.Log("is near heart");
+                endPos = new Vector2(pos.x, pos.y);
+                
+                ssc.spline.SetPosition(0, rootHeart.position);
+            }
+            else
+            {
+                light.transform.position = new Vector2(pos.x, pos.y - lightYOffset * 2);
+                endPos = new Vector2(pos.x, pos.y + lightYOffset);
+                
+                ssc.spline.SetPosition(0, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootBottomYOffset)));
+            }
+            
+            tween = light.transform.DOMove(endPos, animDuration)
                 .OnComplete(() => { tween = null; });
         }
 
@@ -75,9 +101,18 @@ namespace Player
 
             // ssc.spline.SetLeftTangent(1, leftTangent);
             // ssc.spline.SetRightTangent(1, rightTangent);
-            ssc.spline.SetLeftTangent(1, -transform.up * pointTangentScale);
             
-            tween?.ChangeEndValue(new Vector2(pos.x, pos.y + lightYOffset), true);
+            Vector3 endPos;
+            if (IsNearHeart)
+            {
+                endPos = new Vector2(pos.x, pos.y);
+            } else
+            {
+                ssc.spline.SetLeftTangent(1, -transform.up * pointTangentScale);
+                endPos = new Vector2(pos.x, pos.y + lightYOffset);
+            }
+
+            tween?.ChangeEndValue(endPos, true);
         }
 
         private IEnumerator Run()
