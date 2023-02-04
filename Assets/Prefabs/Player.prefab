@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455146230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0.32, y: 0.02, z: 0}
   m_LocalScale: {x: 1.42, y: 0.44, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -161,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.58666587, y: -0.06311095}
+  m_Offset: {x: 0.09, y: -0.06311083}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -172,7 +172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1733322, y: 7.8159895}
+  m_Size: {x: 2.04, y: 7.8159895}
   m_EdgeRadius: 0
 --- !u!114 &1455146234
 MonoBehaviour:
@@ -191,6 +191,7 @@ MonoBehaviour:
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  cooldown: 1
 --- !u!1 &2022964399
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +290,7 @@ GameObject:
   - component: {fileID: 5015243942595675650}
   - component: {fileID: 134092010}
   - component: {fileID: 7606666028574707769}
+  - component: {fileID: 5969519689244460117}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -393,3 +395,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+--- !u!95 &5969519689244460117
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015243942595675653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e42f869011edc5b48b441747b4f75430, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
