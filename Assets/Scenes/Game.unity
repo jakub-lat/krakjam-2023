@@ -2573,6 +2573,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5969519689244460117, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969519689244460117, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
