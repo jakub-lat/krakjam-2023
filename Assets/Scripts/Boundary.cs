@@ -13,4 +13,12 @@ public class Boundary : MonoBehaviour
             PlayerBehaviour.Current.GotHit(10000000000);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.transform.CompareTag("Player"))
+        {
+            PlayerBehaviour.Current.GotHit(10000000000);
+        }
+    }
 }
