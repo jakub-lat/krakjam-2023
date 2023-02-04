@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Player;
@@ -30,8 +31,15 @@ public class Enemy : MonoBehaviour
     private bool gotHit = false;
     private bool activated = false;
 
-    public void Activate() { activated = true;}
+    private RootEffect rootEffect;
     
+    public void Activate() { activated = true;}
+
+    private void Awake()
+    {
+        rootEffect = GetComponentInChildren<RootEffect>();
+    }
+
     void Start()
     {
         player = PlayerMovement.Current.gameObject;
@@ -97,6 +105,7 @@ public class Enemy : MonoBehaviour
     {
         dead = true;
         anim.SetTrigger("Death");
+        rootEffect.enabled = false;
     }
 
     public void GotHit(float amount=0)

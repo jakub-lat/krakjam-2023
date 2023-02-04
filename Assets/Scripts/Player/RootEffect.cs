@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using Codice.Client.Commands.TransformerRule;
+﻿using System.Collections;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
@@ -38,6 +36,8 @@ namespace Player
         private float startX;
 
         private bool IsNearHeart => Vector3.Distance(follow.position, rootHeart.position) <= heartNearbyMinDistance;
+        
+        private int boundsHash = 0;
 
         private void Start()
         {
@@ -63,6 +63,8 @@ namespace Player
             ssc.spline.SetTangentMode(1, ShapeTangentMode.Broken);
             
             startX = pos.x;
+            
+            ssc.BakeMesh();
         }
 
         private void Step()
@@ -89,6 +91,22 @@ namespace Player
             
             tween = light.transform.DOMove(endPos, animDuration)
                 .OnComplete(() => { tween = null; });
+            
+            SpriteShapeFix();
+        }
+
+        private void SpriteShapeFix()
+        {
+            var bounds = new Bounds();
+            for (var i = 0; i < ssc.spline.GetPointCount(); ++i)
+                bounds.Encapsulate(ssc.spline.GetPosition(i));
+            bounds.Encapsulate(transform.position);
+     
+            if (boundsHash != bounds.GetHashCode())
+            {
+                ssc.spriteShapeRenderer.SetLocalAABB(bounds);
+                boundsHash = bounds.GetHashCode();
+            }
         }
 
         private void Update()
@@ -105,12 +123,14 @@ namespace Player
             Vector3 endPos;
             if (IsNearHeart)
             {
-                endPos = new Vector2(pos.x, pos.y);
+                endPos = (Vector2)pos + ((Vector2)pos - (Vector2)rootHeart.position).normalized * 15f;
             } else
             {
                 ssc.spline.SetLeftTangent(1, -transform.up * pointTangentScale);
                 endPos = new Vector2(pos.x, pos.y + lightYOffset);
             }
+            
+            SpriteShapeFix();
 
             tween?.ChangeEndValue(endPos, true);
         }
