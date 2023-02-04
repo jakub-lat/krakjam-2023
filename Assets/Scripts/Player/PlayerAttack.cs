@@ -14,6 +14,7 @@ namespace Player
 
         private void Update()
         {
+            if (player.dead) return;
             Attack();
         }
 

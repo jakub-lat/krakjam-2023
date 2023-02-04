@@ -7,6 +7,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     public bool attacking = false;
+    public float dmg = 20;
 
     public void Attack(bool t)
     {
@@ -15,7 +16,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Hit()
     {
-        PlayerBehaviour.Current.GotHit(10);
+        PlayerBehaviour.Current.GotHit(dmg);
         attacking = false;
         // sound or particles
         Debug.Log("Player hit!");

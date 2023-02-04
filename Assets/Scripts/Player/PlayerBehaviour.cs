@@ -13,8 +13,11 @@ namespace Player
         private bool gotHit = false;
         private bool attacking = false;
         private PlayerAttack _playerAttack;
+        public bool dead = false;
 
         public float Health => health;
+
+        [Header("UI")] public Canvas deathUI;
 
         protected override void Awake()
         {
@@ -26,16 +29,19 @@ namespace Player
         private void Start()
         {
             _playerAttack = PlayerAttack.Current;
+            deathUI.enabled = false;
         }
 
         public void GotHit(float amount)
         {
+            if(dead) return;
             health = Math.Max(0, health - amount);
             HealthUI.Current.SetAmount(health / maxHealth);
             if (health == 0)
             {
                 Debug.Log("Player dead");
                 anim.SetTrigger("Death");
+                dead = true;
             }
             else
             {
@@ -54,6 +60,11 @@ namespace Player
         public void EndGotHit()
         {
             gotHit = false;
+        }
+
+        public void EndDeath()
+        {
+            deathUI.enabled = true;
         }
         
         public void EndAttack()
