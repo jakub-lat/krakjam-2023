@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class Enemy_walk_sound : MonoBehaviour
 {
-    public AudioSource walk;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioSource source;
+    public AudioSource screamSource;
+    public AudioClip walk;
+    public AudioClip attack;
+    public AudioClip death;
+    public AudioClip gotHit;
+    
 
     void WalkSound()
     {
-        walk.Play();
+        source.PlayOneShot(walk);
+    }
+    
+    void AttackSound()
+    {
+        source.PlayOneShot(attack);
+    }
+    
+    void DeathSound()
+    {
+        source.PlayOneShot(death);
+        screamSource.Stop();
+        
+    }
+    
+    void HitSound()
+    {
+        source.PlayOneShot(gotHit);
     }
 }
