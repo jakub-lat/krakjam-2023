@@ -886,7 +886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 0, z: -10}
-  m_XDamping: 0.5
+  m_XDamping: 0.2
   m_YDamping: 1
   m_ZDamping: 1
   m_AngularDampingMode: 0
@@ -1088,6 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643534966}
   - component: {fileID: 1643534967}
+  - component: {fileID: 1643534968}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -1149,6 +1150,18 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1403554011}
+--- !u!114 &1643534968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643534965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238b4eaf4a24430ba21f8424c78c153c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1733003287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5015243942595675653, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
