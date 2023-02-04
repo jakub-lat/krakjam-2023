@@ -105,7 +105,6 @@ public class Enemy : MonoBehaviour
     {
         dead = true;
         anim.SetTrigger("Death");
-        Debug.Log(rootEffect.name);
         rootEffect.enabled = false;
     }
 
