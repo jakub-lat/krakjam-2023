@@ -327,10 +327,10 @@ GameObject:
   - component: {fileID: 7606666028574707769}
   - component: {fileID: 5969519689244460117}
   - component: {fileID: 2430747809558882580}
-  - component: {fileID: 1733003293}
   - component: {fileID: 5285140559998082161}
   - component: {fileID: 4154051034745347787}
   - component: {fileID: 2351200292321166291}
+  - component: {fileID: 1733003293}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -475,14 +475,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.27}
   m_Size: {x: 2, y: 4.47}
   m_Direction: 0
---- !u!81 &1733003293
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5015243942595675653}
-  m_Enabled: 1
 --- !u!82 &5285140559998082161
 AudioSource:
   m_ObjectHideFlags: 0
@@ -694,6 +686,14 @@ MonoBehaviour:
   weaponHeavy: {fileID: 8300000, guid: 2cd56ac46ed9a7d48b9a0973354c880c, type: 3}
   gotHit: {fileID: 8300000, guid: c2c16c1b1915c4a4abbd398e36bc0ab6, type: 3}
   pickup: {fileID: 8300000, guid: c8d3286e40b6d08419e379155e78f00e, type: 3}
+--- !u!81 &1733003293
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5015243942595675653}
+  m_Enabled: 1
 --- !u!1 &5995733490525469625
 GameObject:
   m_ObjectHideFlags: 0
