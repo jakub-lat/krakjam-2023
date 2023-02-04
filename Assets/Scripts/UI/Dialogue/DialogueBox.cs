@@ -8,6 +8,7 @@ public class DialogueBox : MonoBehaviour
     public List<DialogueElement> dialogues;
     private bool used = false;
     public bool force = false;
+    
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player") && !used)

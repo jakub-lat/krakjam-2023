@@ -15,11 +15,11 @@ public class DialogueElement
         contentText = t;
         timeout = tt;
     }
+
     public string personName;
     public string contentText;
     public float timeout = 1.5f;
 }
-
 
 
 public class DialoguesController : MonoSingleton<DialoguesController>
@@ -29,7 +29,7 @@ public class DialoguesController : MonoSingleton<DialoguesController>
 
     public Text header;
     public Text content;
-    
+
     private DialogueElement current;
     private float hideTimer = 0;
     private bool hidden = true;
@@ -47,7 +47,7 @@ public class DialoguesController : MonoSingleton<DialoguesController>
         {
             header.text = current.personName;
             content.text = current.contentText;
-            
+
             hideTimer = current.timeout;
             hidden = false;
         }
@@ -61,8 +61,8 @@ public class DialoguesController : MonoSingleton<DialoguesController>
         {
             Next();
         }
-        
-        if(Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.E))  Next();
+
+        if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.E)) Next();
     }
 
     public void Next()
@@ -72,20 +72,21 @@ public class DialoguesController : MonoSingleton<DialoguesController>
             Show(false);
             return;
         }
+
         current = dialogues.First();
         dialogues.Dequeue();
         Show();
     }
 
-    public void AddDialogue(string t, string p="", float tt=1.5f)
+    public void AddDialogue(string t, string p = "", float tt = 1.5f)
     {
-        dialogues.Enqueue(new DialogueElement(p,t,tt));
+        dialogues.Enqueue(new DialogueElement(p, t, tt));
         if (hidden)
         {
             Next();
         }
     }
-    
+
     public void AddDialogue(DialogueElement d)
     {
         dialogues.Enqueue(d);
@@ -99,5 +100,4 @@ public class DialoguesController : MonoSingleton<DialoguesController>
     {
         dialogues.Clear();
     }
-    
 }
