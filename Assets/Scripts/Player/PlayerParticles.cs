@@ -14,6 +14,7 @@ namespace Player
         [SerializeField] private Light2DBase light;
         [SerializeField] private float lightYOffset = 5f;
         [SerializeField] private float rootYOffset = 3f;
+        [SerializeField] private float animDuration = 2f;
 
         private void Start()
         {
@@ -26,10 +27,10 @@ namespace Player
         {
             var playerPos = PlayerMovement.Current.transform.position;
 
-            transform.position = new Vector2(playerPos.x, playerPos.y - rootYOffset);
+            transform.localPosition = new Vector2(0, -rootYOffset);
             
-            light.transform.position = new Vector2(playerPos.x, playerPos.y - lightYOffset * 2);
-            light.transform.DOMove(new Vector2(playerPos.x, playerPos.y + lightYOffset), 1f);
+            light.transform.localPosition = new Vector2(0, -lightYOffset * 2);
+            light.transform.DOLocalMove(new Vector2(0, lightYOffset), animDuration);
         }
 
         private IEnumerator Run()
