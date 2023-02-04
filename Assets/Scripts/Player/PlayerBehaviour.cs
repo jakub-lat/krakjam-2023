@@ -28,7 +28,9 @@ namespace Player
         public float Health
         {
             get => _health;
-            set {
+            set
+            {
+                var prev = _health;
                 _health = Math.Clamp(value, 0, maxHealth);
                 
                 Debug.Log($"health: {_health}");
@@ -42,7 +44,7 @@ namespace Player
                     dead = true;
                     PlayerSounds.Current.Death();
                 }
-                else
+                else if(_health < prev)
                 {
                     anim.SetTrigger("GotHit");
                     gotHit = true;
