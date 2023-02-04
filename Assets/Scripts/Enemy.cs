@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     [Header("Attacking")]
     public float attackDistanceMin = 2f;
     public float attackDamage = 10;
+    public float attackCooldown = 1f;
 
     [Header("GotHit")] 
     public float knockBackDistance = 2f;
@@ -40,6 +41,7 @@ public class Enemy : MonoBehaviour
     }
 
     private Vector3 ppos, pposx;
+    private float timer = 0;
     void Update()
     {
         if (dead) return;
@@ -48,6 +50,8 @@ public class Enemy : MonoBehaviour
 
         if (!attacking && !gotHit && activated)
         {
+            timer -= Time.deltaTime;
+            
             if (transform.position.x < ppos.x) skeleton.transform.localScale = new Vector3(-1, 1, 1);
             else skeleton.transform.localScale = new Vector3(1, 1, 1);
             
@@ -55,8 +59,9 @@ public class Enemy : MonoBehaviour
             if (walkingTimer <= 0) MoveTowardsPlayer();
             transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * walkSpeed);
             
-            if (Vector3.Distance(ppos, transform.position) <= attackDistanceMin)
+            if (Vector3.Distance(ppos, transform.position) <= attackDistanceMin && timer<=0)
             {
+                timer = attackCooldown;
                 //Make attack
                 anim.SetTrigger("Attack");
                 attacking = true;
