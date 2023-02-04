@@ -260,7 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeleton: {fileID: 108531045735361169}
   startingHealth: 100
-  walkSpeed: 0.7
+  walkSpeed: 1
   walkStepDistance: 1.8
   walkStepInterval: 2
   attackDistanceMin: 1.8
@@ -2190,6 +2190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacking: 0
+  dmg: 20
 --- !u!1 &9149217489519581293
 GameObject:
   m_ObjectHideFlags: 0
