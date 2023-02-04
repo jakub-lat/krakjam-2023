@@ -39,13 +39,12 @@ public class Enemy : MonoBehaviour
         health = startingHealth;
     }
 
-    private Vector3 ppos;
+    private Vector3 ppos, pposx;
     void Update()
     {
         if (dead) return;
         ppos = player.transform.position;
-        ppos.y = transform.position.y;
-        ppos.z = transform.position.z;
+        pposx = new Vector3(ppos.x,transform.position.y,transform.position.z);
 
         if (!attacking && !gotHit && activated)
         {
@@ -80,7 +79,7 @@ public class Enemy : MonoBehaviour
     void MoveTowardsPlayer()
     {
         walkingTimer = walkStepInterval;
-        target = Vector3.MoveTowards(transform.position, ppos, walkStepDistance) ;
+        target = Vector3.MoveTowards(transform.position, pposx, walkStepDistance) ;
         
         anim.SetTrigger("WalkStep");
     }
