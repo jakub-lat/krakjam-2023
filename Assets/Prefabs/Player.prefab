@@ -437,8 +437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  dead: 0
+  pulseHealthBoost: 4
   deathUI: {fileID: 0}
+  dead: 0
 --- !u!95 &5969519689244460117
 Animator:
   serializedVersion: 5
@@ -818,7 +819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5543976341299631254, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: interval
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_SortingLayer

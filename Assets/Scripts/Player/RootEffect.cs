@@ -3,6 +3,7 @@ using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.U2D;
 
 namespace Player
@@ -39,6 +40,10 @@ namespace Player
         
         private int boundsHash = 0;
 
+
+        public UnityEvent OnPulse;
+        
+
         private void Start()
         {
             rootHeart = HeartInstance.Current.transform;
@@ -67,7 +72,7 @@ namespace Player
             ssc.BakeMesh();
         }
 
-        private void Step()
+        private void Pulse()
         {
             var pos = follow.position;
 
@@ -93,6 +98,8 @@ namespace Player
                 .OnComplete(() => { tween = null; });
             
             SpriteShapeFix();
+            
+            OnPulse?.Invoke();
         }
 
         private void SpriteShapeFix()
@@ -140,7 +147,7 @@ namespace Player
             while (true)
             {
                 yield return new WaitForSeconds(interval);
-                Step();
+                Pulse();
             }
         }
     }

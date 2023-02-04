@@ -3623,46 +3623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 134092010, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: moveSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2022964401, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Color.b
-      value: 0.2497737
-      objectReference: {fileID: 0}
-    - target: {fileID: 2022964401, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Color.g
-      value: 0.22636168
-      objectReference: {fileID: 0}
-    - target: {fileID: 2022964401, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Color.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299427668171613623, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[1].position.x
-      value: 78.872284
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299427668171613623, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[1].position.y
-      value: -5.05001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3413228480705089022, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_LocalAABB.m_Center.x
-      value: 72.48302
-      objectReference: {fileID: 0}
-    - target: {fileID: 3413228480705089022, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_LocalAABB.m_Center.y
-      value: -25.667204
-      objectReference: {fileID: 0}
-    - target: {fileID: 3413228480705089022, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_LocalAABB.m_Extent.x
-      value: 24.90227
-      objectReference: {fileID: 0}
-    - target: {fileID: 3413228480705089022, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_LocalAABB.m_Extent.y
-      value: 29.444334
-      objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_RootOrder
       value: 1
