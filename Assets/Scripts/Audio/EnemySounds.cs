@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,11 @@ public class EnemySounds : MonoBehaviour
     public AudioClip attack;
     public AudioClip death;
     public AudioClip gotHit;
-    
+
+    public void Start()
+    {
+        screamSource.Play();
+    }
 
     void WalkSound()
     {
