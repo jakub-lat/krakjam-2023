@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using UI;
 using UnityEngine;
 using Utils;
@@ -40,11 +41,13 @@ namespace Player
                 Debug.Log("Player dead");
                 anim.SetTrigger("Death");
                 dead = true;
+                PlayerSounds.Current.Death();
             }
             else
             {
                 anim.SetTrigger("GotHit");
                 gotHit = true;
+                PlayerSounds.Current.GotHit();
             }
         }
 
@@ -52,6 +55,7 @@ namespace Player
         {
             if (gotHit || attacking) return false;
             anim.SetTrigger("Attack");
+            PlayerSounds.Current.Weapon(type);
             return true;
         }
 

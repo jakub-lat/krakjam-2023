@@ -9,7 +9,7 @@ namespace Player
 {
     public class RootEffect : MonoBehaviour
     {
-        [SerializeField] private Light2DBase light;
+        [SerializeField] private new Light2DBase light;
         [SerializeField] private Transform rootSprite;
         [SerializeField] private float lightYOffset = 5f;
         [SerializeField] private float rootTopYOffset = -3f;

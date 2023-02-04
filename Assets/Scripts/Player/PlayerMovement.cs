@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Utils;
@@ -63,10 +64,13 @@ namespace Player
                 vCamTransposer.m_FollowOffset = offset;
 
                 lerpT += Time.deltaTime * 1.2f;
+                
+                PlayerSounds.Current.StartWalking();
             }
             else
             {
                 isLerping = false;
+                PlayerSounds.Current.StopWalking();
             }
         }
 
@@ -82,7 +86,6 @@ namespace Player
 
             isJumping = true;
             
-            Debug.Log("jump");
 
             var isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundMask);
             if (!isGrounded) return;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_walk_sound : MonoBehaviour
+public class EnemySounds : MonoBehaviour
 {
     public AudioSource source;
     public AudioSource screamSource;
@@ -26,7 +26,6 @@ public class Enemy_walk_sound : MonoBehaviour
     {
         source.PlayOneShot(death);
         screamSource.Stop();
-        
     }
     
     void HitSound()
