@@ -2411,6 +2411,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141417820, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783719032, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 294273315385156504, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_Name
       value: Map
@@ -2486,61 +2494,6 @@ PrefabInstance:
     - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: dialogues.Array.data[0].voiceover
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].personName
-      value: You
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[1].personName
-      value: You
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[2].personName
-      value: You
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[3].personName
-      value: You
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: '"Impossible" does not mean "false." We and they are made of the same
-        raw material and moved by the same forces.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[1].contentText
-      value: One life, one root. We are inextricably linked in our world.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[2].contentText
-      value: Our world is inextricably linked to us. The root, both good and bad,
-        in and of everyone.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[3].contentText
-      value: It forms and drains us, shapes and cripples us, is our strength and
-        weakness. The prophets proved true.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[1].timeout
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[2].timeout
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[3].timeout
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].voiceover
-      value: 
       objectReference: {fileID: 8300000, guid: 90658f3855cf0114c9b6145e900b6da7, type: 3}
     - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: dialogues.Array.data[1].voiceover
@@ -2554,6 +2507,10 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[3].voiceover
       value: 
       objectReference: {fileID: 8300000, guid: 606b7e5090e99a343bc005b2a8b4584a, type: 3}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].personName
+      value: You
+      objectReference: {fileID: 0}
     - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: dialogues.Array.data[1].personName
       value: You
