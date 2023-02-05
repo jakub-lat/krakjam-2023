@@ -9,9 +9,25 @@ namespace UI
     {
         [SerializeField] private Image image;
 
+        private bool isAnimating = false;
+        private Tween tween;
+
         public void SetAmount(float fillAmount)
         {
-            image.DOFillAmount(fillAmount, 0.2f);
+            if (isAnimating)
+            {
+                tween.OnComplete(() =>
+                {
+                    SetAmount(fillAmount);
+                });
+                return;
+            }
+            
+            isAnimating = true;
+            tween = image.DOFillAmount(fillAmount, 0.2f).OnComplete(() =>
+            {
+                isAnimating = false;
+            });
         }
     }
 }
