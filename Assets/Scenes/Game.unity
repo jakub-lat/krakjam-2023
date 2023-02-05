@@ -2214,25 +2214,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1141417820, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526601705, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1783719032, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 294273315385156504, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_Name
       value: Map
-      objectReference: {fileID: 0}
-    - target: {fileID: 604098191501409407, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 152.9
       objectReference: {fileID: 0}
     - target: {fileID: 1133779520086205898, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_RootOrder
@@ -2277,34 +2261,6 @@ PrefabInstance:
     - target: {fileID: 1133779520086205898, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409599810154914797, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 159.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1694034825769231885, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: Priority
-      value: 196
-      objectReference: {fileID: 0}
-    - target: {fileID: 1694034825769231885, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: MaxDistance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1694034825769231885, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.764
-      objectReference: {fileID: 0}
-    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: attackDamage
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: knockedSpeed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: knockBackDistance
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: source
@@ -2482,6 +2438,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811072, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870551228557811073, guid: bb7811828b321114ca5ef660568fd458, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811076, guid: bb7811828b321114ca5ef660568fd458, type: 3}
