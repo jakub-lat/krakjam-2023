@@ -1420,11 +1420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_Color.b
-      value: 0.81509435
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_Color.g
-      value: 0.81509435
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_Color.r
@@ -1432,7 +1432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_Intensity
-      value: 1.09
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 8449386636995340792, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.data[0]
