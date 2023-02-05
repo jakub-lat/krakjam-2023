@@ -108,8 +108,9 @@ namespace Player
 
             isJumping = true;
             
-
             if (!isGrounded) return;
+            
+            anim.SetTrigger("Jump");
 
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             

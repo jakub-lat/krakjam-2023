@@ -100,6 +100,8 @@ namespace Player
             SpriteShapeFix();
             
             OnPulse?.Invoke();
+            
+            Debug.Log("PULSE");
         }
 
         private void SpriteShapeFix()

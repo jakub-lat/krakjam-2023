@@ -53,10 +53,13 @@ MonoBehaviour:
   rootBottomYOffset: -12
   pointHeight: 0.7
   pointTangentScale: 7
-  animDuration: 1
+  animDuration: 1.2
   interval: 0
   ssc: {fileID: 7686366008889601639}
   heartNearbyMinDistance: 25
+  OnPulse:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8449386636995340791
 GameObject:
   m_ObjectHideFlags: 0
