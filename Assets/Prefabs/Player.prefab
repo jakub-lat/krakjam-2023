@@ -51,6 +51,7 @@ MonoBehaviour:
   source: {fileID: 992927994}
   minTime: 6
   maxTime: 20
+  active: 0
 --- !u!82 &992927994
 AudioSource:
   m_ObjectHideFlags: 0
@@ -321,7 +322,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.04, y: 7.8159895}
+  m_Size: {x: 2.77, y: 12.31}
   m_EdgeRadius: 0
 --- !u!114 &1392013058203703084
 MonoBehaviour:
