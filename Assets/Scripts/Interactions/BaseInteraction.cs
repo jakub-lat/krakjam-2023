@@ -22,8 +22,10 @@ namespace DefaultNamespace
             });
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        private void OnTriggerExit2D(Collider2D col)
         {
+            if (!col.gameObject.CompareTag("Player")) return;
+
             InteractionController.Current.HideInteraction(GetInstanceID());
         }
 

@@ -45,7 +45,10 @@ namespace UI
 
         public void ShowInteraction(int instanceID, string text, Action action)
         {
-            canvasGroup.DOFade(1, 0.2f);
+            canvasGroup.DOFade(1, 0.2f).OnComplete(() =>
+            {
+                canvasGroup.alpha = 1;
+            });
             
             var data = new InteractionData
             {

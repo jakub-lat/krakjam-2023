@@ -2276,6 +2276,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1652569214}
+    - target: {fileID: 2330884415468033523, guid: bb7811828b321114ca5ef660568fd458, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811072, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2362,7 +2366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811073, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811076, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Name
@@ -2377,6 +2381,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2129870507, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_Text
+      value: '[E] BACK'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129870507, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
       propertyPath: dialogueDisplayers.Array.data[0]
       value: 

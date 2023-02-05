@@ -14,7 +14,7 @@ namespace Player
         [SerializeField] private LayerMask groundMask;
         [SerializeField] private Transform groundCheck;
         [SerializeField] private Transform playerBody;
-        
+
         private Rigidbody2D rb;
 
         private CinemachineTransposer vCamTransposer;
@@ -59,22 +59,22 @@ namespace Player
                     horizontal > 0 ? 0 : 180, playerBody.localRotation.eulerAngles.z));
 
 
-                anim.SetBool("Walking",isGrounded);
+                anim.SetBool("Walking", isGrounded);
 
-                    if (!isLerping)
+                if (!isLerping)
                 {
                     lerpFrom = vCamTransposer.m_FollowOffset.x;
                     lerpTo = Mathf.Sign(horizontal) * 3.5f;
                     lerpT = 0;
                     isLerping = true;
                 }
-                
+
                 var offset = vCamTransposer.m_FollowOffset;
                 offset.x = Mathf.Lerp(lerpFrom, lerpTo, Mathf.SmoothStep(0, 1, lerpT));
                 vCamTransposer.m_FollowOffset = offset;
 
                 lerpT += Time.deltaTime * 1.2f;
-                
+
                 PlayerSounds.Current.StartWalking();
             }
             else
@@ -93,7 +93,7 @@ namespace Player
             {
                 PlayerSounds.Current.Land();
             }
-            
+
             wasGrounded = isGrounded;
         }
 
@@ -104,16 +104,17 @@ namespace Player
                 isJumping = false;
                 return;
             }
+
             if (isJumping) return;
 
             isJumping = true;
-            
+
             if (!isGrounded) return;
-            
+
             anim.SetTrigger("Jump");
 
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            
+
             PlayerSounds.Current.Jump();
         }
     }
