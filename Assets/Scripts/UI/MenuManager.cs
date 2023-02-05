@@ -12,5 +12,10 @@ namespace UI
             mainMenu.SetActive(false);
             howToPlay.SetActive(true);
         }
+
+        public void Quit()
+        {
+            Application.Quit();
+        }
     }
 }
