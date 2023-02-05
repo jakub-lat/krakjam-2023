@@ -4126,6 +4126,7 @@ Transform:
   - {fileID: 6929843006654370274}
   - {fileID: 6974912478001306912}
   - {fileID: 2744965255783311768}
+  - {fileID: 4536606127855838792}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6458,6 +6459,100 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5718796728476483874, guid: 8bd144b584ffea547ab2c6c562bf1b6a, type: 3}
   m_PrefabInstance: {fileID: 604098190541366011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &604098190541623078
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1133779520086205898}
+    m_Modifications:
+    - target: {fileID: 3933739407785699693, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_Name
+      value: SoundTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_RootOrder
+      value: 243
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 351.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -62.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_Pitch
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: Priority
+      value: 134
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c0416d4ba06a37439e457e815b46a1a, type: 3}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.861
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933739407785699695, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.024
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+--- !u!4 &4536606127855838792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3933739407785699694, guid: f63fcf63800746442ba3b32fece9201e, type: 3}
+  m_PrefabInstance: {fileID: 604098190541623078}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &604098190576036987
 PrefabInstance:
@@ -14097,7 +14192,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6495d4ac9ba0c01488d4207a82f09100, type: 3}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Konrad
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -16324,7 +16419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3775550346891534162, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 372.67
+      value: 370.31
       objectReference: {fileID: 0}
     - target: {fileID: 3775550346891534162, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16416,7 +16511,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 47841348b10ccbb40ac59fc3c7924bff, type: 3}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -19168,7 +19263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1586394155216635425, guid: 02db5e99a242ac047b2bc9b9f5f92a87, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 376.26
+      value: 371.92
       objectReference: {fileID: 0}
     - target: {fileID: 1586394155216635425, guid: 02db5e99a242ac047b2bc9b9f5f92a87, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20084,7 +20179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2766634955766090337, guid: 3eb549e2037071340979a6f668ea0695, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.54
+      value: 25.67
       objectReference: {fileID: 0}
     - target: {fileID: 2766634955766090337, guid: 3eb549e2037071340979a6f668ea0695, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20234,7 +20329,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 1dc3b7e05524d204eaac756ef4f951b6, type: 3}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -20887,11 +20982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 371.21
+      value: 380.31
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.67
+      value: -31.05
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20935,9 +21030,17 @@ PrefabInstance:
       propertyPath: letterVoiceover
       value: 
       objectReference: {fileID: 8300000, guid: 4747a14f713636b4ea507a2dcf05ce14, type: 3}
+    - target: {fileID: 2317426571778114323, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4480080866251192836, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970801266132041295, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
@@ -22553,7 +22656,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8ee8e95ced62a96469178fcd5eeedce9, type: 3}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -23105,7 +23208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946868970, guid: 3eb549e2037071340979a6f668ea0695, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.21
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 946868970, guid: 3eb549e2037071340979a6f668ea0695, type: 3}
       propertyPath: m_LocalPosition.y
