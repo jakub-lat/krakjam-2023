@@ -13,6 +13,7 @@ namespace UI
         private CanvasGroup canvasGroup;
 
         public bool Visible => canvasGroup.alpha > 0;
+        public bool FullVisible => canvasGroup.alpha == 1;
 
         protected override void Awake()
         {
@@ -36,7 +37,7 @@ namespace UI
 
         private void Update()
         {
-            if (Visible && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E)))
+            if (FullVisible && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E)))
             {
                 Hide();
             }
