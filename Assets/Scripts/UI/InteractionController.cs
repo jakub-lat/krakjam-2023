@@ -56,7 +56,10 @@ namespace UI
             
             currentInteraction = data;
             interactionText.text = $"[E] {text}";
-            possibleInteractions.Add(instanceID, data);
+            if (!possibleInteractions.ContainsKey(instanceID))
+            {
+                possibleInteractions.Add(instanceID, data);
+            }
         }
 
         public void HideInteraction(int? instanceID = null)
