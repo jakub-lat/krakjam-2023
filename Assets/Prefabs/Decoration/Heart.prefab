@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 307611248}
   - component: {fileID: 307611247}
   - component: {fileID: 307611249}
+  - component: {fileID: 604098192046035430}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -31,8 +32,8 @@ Transform:
   m_GameObject: {fileID: 2296936587217198110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.3, y: 1.8, z: 0}
-  m_LocalScale: {x: 1.3370515, y: 1.7806661, z: 1.5280589}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.95581, y: 0.95581, z: 0.95581}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7029078633322427113}
   - {fileID: 6673209092998952232}
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 409a9c8b0d9a7cd47a7c7462b55abec7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8c839e42bf49a84682b6cda7bd37c64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -830,6 +831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86bc723c4fe84ecd8860439b443ecdc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beatSound: {fileID: 8300000, guid: 6ac24838a83d41b47947293c465bda1c, type: 3}
+  source: {fileID: 307611247}
 --- !u!61 &307611248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -837,24 +840,24 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2296936587217198110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.047225, y: 0}
+  m_Offset: {x: 8.047225, y: -2.5010257}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 7.5}
+    oldSize: {x: 30.007326, y: 16}
     newSize: {x: 10, y: 7.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 26.094446, y: 7.5}
+  m_Size: {x: 26.094446, y: 12.502051}
   m_EdgeRadius: 0
 --- !u!82 &307611247
 AudioSource:
@@ -870,14 +873,14 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 196
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.1
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -912,7 +915,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.764
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -965,6 +968,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 307611247}
+--- !u!95 &604098192046035430
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296936587217198110}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb84b8fa49d56434da1bb3a30b9e6139, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &6196272651505561674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +1040,7 @@ MonoBehaviour:
   m_Intensity: 0.9
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000bff00c1
   m_LightCookieSprite: {fileID: 21300000, guid: 119f93d0bcbf1e743bf5fcf237507d39, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1128,7 +1151,7 @@ MonoBehaviour:
   m_Intensity: 0.9
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000bff00c1
   m_LightCookieSprite: {fileID: 21300000, guid: 119f93d0bcbf1e743bf5fcf237507d39, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
