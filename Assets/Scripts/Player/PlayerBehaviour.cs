@@ -47,11 +47,12 @@ namespace Player
                 }
                 else if(_health < prev)
                 {
+                    
                     anim.SetTrigger("GotHit");
                     gotHit = true;
                     PlayerSounds.Current.GotHit();
                 }
-                blood.Play();
+                if(value<0) blood.Play();
             }
         }
 
