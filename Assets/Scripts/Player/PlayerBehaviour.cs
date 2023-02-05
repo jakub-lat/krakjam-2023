@@ -46,17 +46,20 @@ namespace Player
                 if (_health == 0)
                 {
                     Debug.Log("Player dead");
+                    anim.SetBool("Walking", false);
                     anim.SetTrigger("Death");
+                    
                     dead = true;
+                    
                     PlayerSounds.Current.Death();
                     DialoguesController.Current.ClearDialogues();
                     DialoguesController.Current.Next();
-                    
-                    
+
                     rootz.SetActive(false);
 
                     deathBG.DOFade(0, 0);
                     deathBG.DOFade(1, 5);
+                    
                     
                     MusicController.Current.Switch(MusicType.Outro);
                 }
