@@ -30,6 +30,11 @@ namespace Player
         private PlayerBehaviour pb;
         private Animator anim;
 
+        public void Death()
+        {
+            rb.velocity = Vector3.zero;
+        }
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
