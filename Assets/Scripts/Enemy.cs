@@ -34,6 +34,8 @@ public class Enemy : MonoBehaviour
 
     private RootEffect rootEffect;
 
+    private Vector3 skeletonBaseScale;
+
     public void Activate()
     {
         activated = true;
@@ -44,6 +46,8 @@ public class Enemy : MonoBehaviour
     {
         rootEffect = GetComponentInChildren<RootEffect>();
         if(!activated) rootEffect.gameObject.SetActive(false);
+
+        skeletonBaseScale = skeleton.transform.localScale;
     }
 
     void Start()
@@ -67,8 +71,8 @@ public class Enemy : MonoBehaviour
             timer -= Time.deltaTime;
             walkingTimer -= Time.deltaTime;
             
-            if (transform.position.x < ppos.x) skeleton.transform.localScale = new Vector3(-1, 1, 1);
-            else skeleton.transform.localScale = new Vector3(1, 1, 1);
+            if (transform.position.x < ppos.x) skeleton.transform.localScale = skeletonBaseScale;
+            else skeleton.transform.localScale = new Vector3(-skeletonBaseScale.x, skeletonBaseScale.y, skeletonBaseScale.z);
             
             if (Vector3.Distance(ppos, transform.position)<= attackDistanceMin  )
             {
