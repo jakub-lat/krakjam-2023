@@ -50,7 +50,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 2
   m_FalloffIntensity: 0.785
-  m_Color: {r: 0.22075468, g: 0.39799505, b: 1, a: 0.6901961}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.6901961}
   m_Intensity: 4.62
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
@@ -1460,7 +1460,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 45
       minScalar: 10
       maxCurve:
         serializedVersion: 2
