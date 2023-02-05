@@ -2361,6 +2361,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2129870507, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_Text
+      value: '[E] BACK'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129870507, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
       propertyPath: dialogueDisplayers.Array.data[0]
       value: 
