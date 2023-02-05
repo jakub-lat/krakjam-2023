@@ -20935,6 +20935,10 @@ PrefabInstance:
       propertyPath: letterVoiceover
       value: 
       objectReference: {fileID: 8300000, guid: 4747a14f713636b4ea507a2dcf05ce14, type: 3}
+    - target: {fileID: 4480080866251192836, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
 --- !u!4 &4246020122374909826 stripped
@@ -23456,7 +23460,7 @@ PrefabInstance:
     - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: source
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6206184167725208157}
     - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: content
       value: 'Dear Friend!
@@ -23474,8 +23478,17 @@ PrefabInstance:
       propertyPath: letterVoiceover
       value: 
       objectReference: {fileID: 8300000, guid: 924be26463f31f4498d196f4fdaec478, type: 3}
+    - target: {fileID: 4480080866251192836, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+--- !u!82 &6206184167725208157 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4480080866251192836, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+  m_PrefabInstance: {fileID: 7497572340243834969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7620845001277356664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
@@ -23905,6 +23918,10 @@ PrefabInstance:
       propertyPath: letterVoiceover
       value: 
       objectReference: {fileID: 8300000, guid: 606e85092820e5a4695edf73b2212d23, type: 3}
+    - target: {fileID: 4480080866251192836, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
 --- !u!4 &8095794450355062296 stripped
