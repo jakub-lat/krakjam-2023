@@ -55,3 +55,6 @@ TagManager:
   - name: Player
     uniqueID: 1405604575
     locked: 0
+  - name: Parallax
+    uniqueID: 3238067979
+    locked: 0
