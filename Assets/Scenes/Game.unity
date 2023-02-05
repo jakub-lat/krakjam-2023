@@ -2459,6 +2459,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: force
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].timeout
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].timeout
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].timeout
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].timeout
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].personName
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].personName
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].personName
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].personName
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[0].contentText
+      value: '"Impossible" does not mean "false." We and they are made of the same
+        raw material and moved by the same forces.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[1].contentText
+      value: One life, one root. We are inextricably linked in our world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[2].contentText
+      value: Our world is inextricably linked to us. The root, both good and bad,
+        in and of everyone.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: dialogues.Array.data[3].contentText
+      value: It forms and drains us, shapes and cripples us, is our strength and
+        weakness. The prophets proved true.
+      objectReference: {fileID: 0}
     - target: {fileID: 2744965255783311768, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 217.6
