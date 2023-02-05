@@ -15,6 +15,7 @@ namespace Player
         [SerializeField] private AudioClip pulseClip;
         
         [Header("UI")] public Canvas deathUI;
+        public ParticleSystem blood;
         
 
         private float _health;
@@ -50,6 +51,7 @@ namespace Player
                     gotHit = true;
                     PlayerSounds.Current.GotHit();
                 }
+                blood.Play();
             }
         }
 
@@ -79,6 +81,7 @@ namespace Player
         {
             if(dead) return;
             Health -= amount;
+            
         }
 
         private AttackType c;

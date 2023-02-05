@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     [Header("GotHit")] 
     public float knockBackDistance = 2f;
     public float knockedSpeed = 2f;
+    public ParticleSystem blood;
 
     private bool dead = false;
     private Animator anim;
@@ -85,10 +86,9 @@ public class Enemy : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * knockedSpeed);
         }
         
-
-        if(Input.GetKeyDown(KeyCode.T) && !attacking) anim.SetTrigger("Attack");
-        if(Input.GetKeyDown(KeyCode.H)) GotHit();
-        if(Input.GetKeyDown(KeyCode.G)) Death();
+        // if(Input.GetKeyDown(KeyCode.T) && !attacking) anim.SetTrigger("Attack");
+        // if(Input.GetKeyDown(KeyCode.H)) GotHit();
+        // if(Input.GetKeyDown(KeyCode.G)) Death();
     }
 
     private Vector3 target;
@@ -114,6 +114,7 @@ public class Enemy : MonoBehaviour
         if(dead) return;
 
         health -= amount;
+        blood.Play();
         if (health <= 0)
         {
             health = 0;
