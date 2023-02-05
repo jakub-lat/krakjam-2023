@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Audio;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Utils;
 
 namespace Player
@@ -9,12 +11,12 @@ namespace Player
     public class WeaponController : MonoSingleton<WeaponController>
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
-        private List<Weapon> weapons;
+        public List<Weapon> Weapons { get; private set; }
 
         protected override void Awake()
         {
             base.Awake();
-            weapons = GetComponents<Weapon>().OrderBy(x => x.weaponIndex).ToList();
+            Weapons = GetComponents<Weapon>().OrderBy(x => x.weaponIndex).ToList();
         }
 
         private void Start()
@@ -26,17 +28,18 @@ namespace Player
 
         public void Switch(int index)
         {
-            foreach (var x in weapons)
+            foreach (var x in Weapons)
             {
                 x.enabled = false;
             }
 
-            CurrentWeapon = weapons[index];
+            CurrentWeapon = Weapons[index];
             CurrentWeapon.enabled = true;
             spriteRenderer.sprite = CurrentWeapon.sprite;
+            PlayerSounds.Current.Pickup();
         }
 
-        public void Switch(string weaponName) => Switch(weapons.FindIndex(x => x.weaponName == weaponName));
+        public void Switch(string weaponName) => Switch(Weapons.FindIndex(x => x.weaponName == weaponName));
 
         private void Update()
         {

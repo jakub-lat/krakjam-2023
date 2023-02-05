@@ -220,13 +220,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68c8f741aa4474bd2049fbb28eb32f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: Test
+  weaponName: Spear
   weaponIndex: 1
   sprite: {fileID: -9095717837082945937, guid: 2cf89a75f3e72f843b3d5c6433a3945e, type: 3}
-  weakAttackDamage: 15
-  weakAttackCooldown: 0.3
-  strongAttackDamage: 35
-  strongAttackCooldown: 0.6
+  weakAttackDamage: 25
+  weakAttackCooldown: 0.2
+  strongAttackDamage: 50
+  strongAttackCooldown: 0.4
 --- !u!1 &2022964399
 GameObject:
   m_ObjectHideFlags: 0

@@ -2279,46 +2279,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].displayerIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[1].displayerIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[3].displayerIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[6].displayerIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[8].displayerIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: content
-      value: lorem ipsum dolor sit amet
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250466223355090232, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250466223355090232, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250466223355090232, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250466223355090232, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
 --- !u!1001 &2138000710810580700
