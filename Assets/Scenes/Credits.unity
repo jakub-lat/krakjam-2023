@@ -941,7 +941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.24
-  m_Text: "Filip latuszek\njakub latuszek\njan stok\u0142osa\njan stojekt"
+  m_Text: "Filip latuszek\njakub latuszek\njan stok\u0142osa\njan stojek"
 --- !u!222 &2120320657
 CanvasRenderer:
   m_ObjectHideFlags: 0
