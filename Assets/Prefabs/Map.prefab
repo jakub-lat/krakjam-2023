@@ -1476,7 +1476,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ecce50be966e35541883ab8a2c07a53e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2191,7 +2191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ecce50be966e35541883ab8a2c07a53e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2528,7 +2528,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 36c584024e459534f828bdbe2e109ce7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2612,7 +2612,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ecce50be966e35541883ab8a2c07a53e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -3769,6 +3769,8 @@ Transform:
   - {fileID: 781473685}
   - {fileID: 1149738639}
   - {fileID: 927535128}
+  - {fileID: 4246020122374909826}
+  - {fileID: 8095794450355062296}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12888,7 +12890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].timeout
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].timeout
@@ -12944,7 +12946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "Ten \u015Bwi\u0119c\u0105cy korze\u0144. Prowadzi do mojego celu."
+      value: This glowing root. It leads to my destination.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].contentText
@@ -15015,7 +15017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].timeout
-      value: 3
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].timeout
@@ -15099,8 +15101,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "Nareszcie jaka\u015B porz\u0105dna bro\u0144! Wezm\u0119 j\u0105, a
-        z pewno\u015Bci\u0105 przyda si\u0119 p\xF3\u017Aniej."
+      value: Finally, some decent weapons! I'll take it, and it will certainly come
+        in handy later.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[10].personName
@@ -16790,7 +16792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Konrad
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -16818,8 +16820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "Czuj\u0119 ten zat\u0119ch\u0142y smr\xF3d... Pora przygotowa\u0107
-        si\u0119 na starcie."
+      value: I can smell the musty stench.... It's time to prepare for the fight.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].contentText
@@ -18640,8 +18641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "To niemo\u017Cliwe, to nie mo\u017Ce by\u0107 prawd\u0105. My i oni
-        jeste\u015Bmy po\u0142\u0105czeni *p\u0142acze*"
+      value: 'It''s impossible, it can''t be true! We and they are connected... '
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].contentText
@@ -19212,6 +19212,74 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4903619538234305412, guid: f68167b72d127e247a09b1ee6d8f79ea, type: 3}
   m_PrefabInstance: {fileID: 4228321385929105541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4261232874942152099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1133779520086205898}
+    m_Modifications:
+    - target: {fileID: 130063940699132448, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_Name
+      value: LetterTrigger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_RootOrder
+      value: 223
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 368.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -29.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: content
+      value: Once there was a beautiful garden here, now everything has died....
+        I unnecessarily went on this dangerous walk, there was little time left.
+        I hope that at least this spear will be useful to someone in ne-
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+--- !u!4 &4246020122374909826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+  m_PrefabInstance: {fileID: 4261232874942152099}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4380197465303383031
 PrefabInstance:
@@ -20644,7 +20712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].timeout
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].timeout
@@ -20700,8 +20768,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "Czuj\u0119 jakby przepe\u0142nia\u0142a mnie energia, ale i poczwary
-        wydaj\u0105 si\u0119 silniejsze..."
+      value: ' I feel like I''m overflowing with energy, but also the monsters seem
+        stronger....'
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].contentText
@@ -21380,11 +21448,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 160.53
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -26.28
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21420,7 +21488,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
       propertyPath: content
-      value: lorem ipsum dolor sit amet
+      value: 'Dear Friend!
+
+        I apologize for not writing back for so long.
+        I owe you an explanation. They pulled us out of the unit in the middle of
+        the night without telling us where we were going, told us to take basic equipment
+        because "the operation wouldn''t last long." We''ve been sitting in these
+        tunnels for a f*cking week with no more supplies. From the abyss we hear
+        strange sounds, as if creeping.... roots? I don''t know...
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
@@ -21779,6 +21856,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2475417655649129019, guid: 57b0284b0dd785f45993a5bfd8736514, type: 3}
   m_PrefabInstance: {fileID: 7738325816783165440}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8184199819507242041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1133779520086205898}
+    m_Modifications:
+    - target: {fileID: 130063940699132448, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_Name
+      value: LetterTrigger (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_RootOrder
+      value: 224
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 378.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -63.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: content
+      value: 'Honey I can''t sit idle like this, it''s getting worse and worse. Every
+        day we are getting fewer...
+
+        Something draws me to this place, only
+        close to this I feel complete.
+
+        I''ll look for supplies, maybe some
+        weapons, you need to make a move.
+
+        I''ll be back soon
+
+        XX'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+--- !u!4 &8095794450355062296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 130063940699132449, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+  m_PrefabInstance: {fileID: 8184199819507242041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8457399159903193517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22010,7 +22164,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
-      value: "Moje dziecko! Te potwory go po\u017Car\u0142y! Co ja teraz mam pocz\u0105\u0107?"
+      value: My child! These monsters have devoured him! What am I supposed to do
+        now?
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[10].personName
@@ -22018,48 +22173,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].contentText
-      value: "Uciszcie j\u0105! Niech przestanie ujada\u0107!"
+      value: Silence her! Let her stop whining!
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[2].contentText
-      value: "Ludzie! Pos\u0142uchajcie mnie."
+      value: People! Listen to me.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[3].contentText
-      value: "Co ty tam wiesz, stary \u0142achmaniarzu?"
+      value: What do you know there, old rascal?
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[4].contentText
-      value: "Pod\u0105\u017Cam \u015Bladem Poczwar. Nic innego nie pozosta\u0142o
-        w moim \u017Cyciu."
+      value: I'm following in the footsteps of the Monsters. There is nothing else
+        left in my life.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[5].contentText
-      value: "Moja ostatnia szansa jest te\u017C wasz\u0105 ostatni\u0105."
+      value: My last chance is also your last chance.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[6].contentText
-      value: "A biegnij sobie w r\u0119ce tych potwor\xF3w."
+      value: And run yourself into the hands of these creatures.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[7].contentText
-      value: "Nie wiecie co m\xF3wicie. Poszukuj\u0119 Korzenia Poczwar. To st\u0105d
-        bior\u0105 energi\u0119."
+      value: You do not know what you are saying. I am looking for the Root of the
+        Monsters. That's where they get their energy from.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[8].contentText
-      value: "Wszyscy wiemy, \u017Ce dotyka nas impuls Korzenia \u017Cycia, ale te
-        Poczwary? Co one maj\u0105 z tym wsp\xF3lnego?"
+      value: We all know that we are affected by the impulse of the Root of Life,
+        but these Monsters? What do they have to do with it?
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[9].contentText
-      value: "Ka\u017Cdy z nich po\u0142\u0105czony jest z podobnym do naszego korzeniem.
-        To trzyma resztki mojej nadziei."
+      value: Each of them is connected to a root similar to ours. This holds the
+        remnants of my hope.
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[10].contentText
-      value: "Powo\u0142anie mnie wzywa, p\xF3ki trzymam si\u0119 na nogach. \u017Begnam,
-        bez cienia \u017Calu, nieznajomi. Bywajcie!"
+      value: Duty calls me, as long as I stay on my feet. Farewell, without a shadow
+        of regret, strangers. Be well!
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].displayerIndex

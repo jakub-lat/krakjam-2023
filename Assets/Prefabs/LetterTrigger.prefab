@@ -72,7 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c5d3432db74022afc4db2ffa2580e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: hello world
+  content: lorem ipsum dolor sit amet
+  letterAudio: {fileID: 8300000, guid: ea37e47b9bcb8874dbaa9cf6aeb250d1, type: 3}
+  source: {fileID: 0}
 --- !u!1 &2779477269401997827
 GameObject:
   m_ObjectHideFlags: 0
