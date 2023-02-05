@@ -1,7 +1,10 @@
 ﻿using System;
 using Audio;
+using DG.Tweening;
 using UI;
+using Unity.UI;
 using UnityEngine;
+using UnityEngine.UI;
 using Utils;
 
 namespace Player
@@ -14,8 +17,11 @@ namespace Player
         [SerializeField] private AudioSource source;
         [SerializeField] private AudioClip pulseClip;
         
-        [Header("UI")] public Canvas deathUI;
+        [Header("UI")] 
+        public Canvas deathUI;
+        public Image deathBG;
         public ParticleSystem blood;
+        public GameObject rootz;
         
 
         private float _health;
@@ -44,10 +50,15 @@ namespace Player
                     anim.SetTrigger("Death");
                     dead = true;
                     PlayerSounds.Current.Death();
+                    DialoguesController.Current.ClearDialogues();
+                    DialoguesController.Current.Next();
+                    rootz.SetActive(false);
+
+                    deathBG.DOFade(0, 0);
+                    deathBG.DOFade(1, 5);
                 }
                 else if(_health < prev)
                 {
-                    
                     anim.SetTrigger("GotHit");
                     gotHit = true;
                     PlayerSounds.Current.GotHit();

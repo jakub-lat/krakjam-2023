@@ -750,7 +750,9 @@ MonoBehaviour:
   source: {fileID: 4154051034745347787}
   pulseClip: {fileID: 8300000, guid: 6ac24838a83d41b47947293c465bda1c, type: 3}
   deathUI: {fileID: 0}
+  deathBG: {fileID: 0}
   blood: {fileID: 1245594823821161989}
+  rootz: {fileID: 8989290258511958801}
   dead: 0
 --- !u!95 &5969519689244460117
 Animator:
@@ -1477,6 +1479,11 @@ PrefabInstance:
 --- !u!4 &244692653882091156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8513794292921707844, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+  m_PrefabInstance: {fileID: 8449386637088164816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8989290258511958801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 685144993428314305, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
   m_PrefabInstance: {fileID: 8449386637088164816}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8629597761124216248
