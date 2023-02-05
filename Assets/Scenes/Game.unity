@@ -2251,18 +2251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1455146231, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 1227019633860016945, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_Name
-      value: DialogueDisplayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299427668171613623, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_UTess2D
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_RootOrder
       value: 2
