@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utils;
 using Random = UnityEngine.Random;
 
-public class RandomScreams : MonoBehaviour
+public class RandomScreams : MonoSingleton<RandomScreams>
 {
     public List<AudioClip> clips;
     public AudioSource source;
@@ -12,6 +13,8 @@ public class RandomScreams : MonoBehaviour
     public float minTime = 3f, maxTime = 6f;
 
     private float timer = 0;
+
+    public bool active;
 
     private void Start()
     {
@@ -29,6 +32,8 @@ public class RandomScreams : MonoBehaviour
 
     void Update()
     {
+        if (!active) return;
+        
         timer -= Time.deltaTime;
         if (timer <= 0)
         {

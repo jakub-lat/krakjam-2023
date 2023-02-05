@@ -25,6 +25,8 @@ public class DialogueElement
     public float timeout = 1.5f;
     public int displayerIndex;
     public AudioClip voiceover=null;
+
+    [HideInInspector] public bool? screamsEnabled;
 }
 
 
@@ -65,10 +67,20 @@ public class DialoguesController : MonoSingleton<DialoguesController>
             {
                 displayer.src.PlayOneShot(current.voiceover);
             }
+
+            if (current.screamsEnabled == false)
+            {
+                RandomScreams.Current.active = false;
+            }
         }
         else
         {
             hidden = true;
+            
+            if (current?.screamsEnabled == true)
+            {
+                RandomScreams.Current.active = true;
+            }
         }
     }
 
