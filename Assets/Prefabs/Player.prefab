@@ -205,9 +205,9 @@ MonoBehaviour:
   weaponIndex: 0
   sprite: {fileID: 21300000, guid: af6570570f4af4f42be1c83b145d4901, type: 3}
   weakAttackDamage: 15
-  weakAttackCooldown: 0.6
+  weakAttackCooldown: 0.7
   strongAttackDamage: 35
-  strongAttackCooldown: 1.2
+  strongAttackCooldown: 1.4
 --- !u!114 &4430180959249690540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,9 +224,9 @@ MonoBehaviour:
   weaponIndex: 1
   sprite: {fileID: 21300000, guid: c334a0b18d6128643937e0291446ce03, type: 3}
   weakAttackDamage: 25
-  weakAttackCooldown: 0.6
+  weakAttackCooldown: 0.7
   strongAttackDamage: 55
-  strongAttackCooldown: 1.2
+  strongAttackCooldown: 1.4
 --- !u!1 &2022964399
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Intensity: 1.54
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000bff00c1
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1338,6 +1338,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5015243942595675649}
     m_Modifications:
+    - target: {fileID: 4203554070448164757, guid: dbaaaf84821c92d4e834527a68a98bde, type: 3}
+      propertyPath: src
+      value: 
+      objectReference: {fileID: 5285140559998082161}
     - target: {fileID: 7405398460510721673, guid: dbaaaf84821c92d4e834527a68a98bde, type: 3}
       propertyPath: m_Name
       value: DialogueDisplayer

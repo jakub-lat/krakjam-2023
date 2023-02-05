@@ -2135,9 +2135,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141417820, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1526601705, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783719032, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 294273315385156504, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 604098191501409407, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 152.9
       objectReference: {fileID: 0}
     - target: {fileID: 1133779520086205898, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_RootOrder
@@ -2182,6 +2198,22 @@ PrefabInstance:
     - target: {fileID: 1133779520086205898, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409599810154914797, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 159.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: attackDamage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: knockedSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567701352229122564, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: knockBackDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: source
@@ -2548,14 +2580,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3288184422790315889, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288184422790315889, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: m_ApplyToSortingLayers.Array.data[1]
-      value: -1056899317
-      objectReference: {fileID: 0}
     - target: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2604,10 +2628,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5590228650686767661, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-      propertyPath: src
-      value: 
-      objectReference: {fileID: 1489237740}
     - target: {fileID: 7606666028574707769, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: deathUI
       value: 
