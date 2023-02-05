@@ -129,6 +129,7 @@ namespace Player
 
         public void EndDeath()
         {
+            Debug.Log("End death - fading UI");
             deathUI.gameObject.SetActive(true);
             deathUI.DOFade(1, 0.5f).SetDelay(1f);
         }
