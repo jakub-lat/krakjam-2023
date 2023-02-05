@@ -256,7 +256,7 @@ MonoBehaviour:
   walkSpeed: 1
   walkStepDistance: 1.8
   walkStepInterval: 2
-  attackDistanceMin: 1.8
+  attackDistanceMin: 1.5
   attackDamage: 10
   attackCooldown: 1
   knockBackDistance: 2
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 7647373132000043013}
   - component: {fileID: 8022764052126765104}
   - component: {fileID: 5651299811347355772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackCol
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
