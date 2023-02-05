@@ -72,3 +72,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues: []
+  force: 0
+  disableScreams: 1
