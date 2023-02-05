@@ -14,7 +14,12 @@ namespace DefaultNamespace
         {
             if (!col.gameObject.CompareTag("Player")) return;
         
-            InteractionController.Current.ShowInteraction(GetInstanceID(), InteractionText, Interact);
+            Debug.Log($"interaction available: {InteractionText}");
+            InteractionController.Current.ShowInteraction(GetInstanceID(), InteractionText, () =>
+            {
+                Debug.Log($"interaction: {InteractionText}");
+                Interact();
+            });
         }
 
         private void OnTriggerExit2D(Collider2D other)

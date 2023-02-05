@@ -15,7 +15,10 @@ namespace Interactions
         protected override void Interact()
         {
             LetterController.Current.Show(content);
-            if(letterAudio!=null) {source.PlayOneShot(letterAudio);}
+            if (letterAudio != null)
+            {
+                source.PlayOneShot(letterAudio);
+            }
         }
     }
 }
