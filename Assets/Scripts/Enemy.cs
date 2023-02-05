@@ -33,12 +33,17 @@ public class Enemy : MonoBehaviour
     private bool activated = false;
 
     private RootEffect rootEffect;
-    
-    public void Activate() { activated = true;}
+
+    public void Activate()
+    {
+        activated = true;
+        rootEffect.gameObject.SetActive(true);
+    }
 
     private void Awake()
     {
         rootEffect = GetComponentInChildren<RootEffect>();
+        if(!activated) rootEffect.gameObject.SetActive(false);
     }
 
     void Start()
