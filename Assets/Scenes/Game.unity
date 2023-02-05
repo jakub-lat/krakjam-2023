@@ -2262,6 +2262,10 @@ PrefabInstance:
       propertyPath: m_LocalAABB.m_Extent.y
       value: 21.320724
       objectReference: {fileID: 0}
+    - target: {fileID: 6553920050468534609, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: m_Volume
+      value: 0.42
+      objectReference: {fileID: 0}
     - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: source
       value: 
