@@ -357,11 +357,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5015243942595675649, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
   m_PrefabInstance: {fileID: 5015243941691123078}
   m_PrefabAsset: {fileID: 0}
---- !u!223 &269208118 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 3870551228557811073, guid: bb7811828b321114ca5ef660568fd458, type: 3}
-  m_PrefabInstance: {fileID: 3870551228289652663}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &298188655
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +813,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4041858529561453076, guid: 4899b3c503a96924da5c23247814013f, type: 3}
   m_PrefabInstance: {fileID: 553399085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &659200361 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 2330884415468033523, guid: bb7811828b321114ca5ef660568fd458, type: 3}
+  m_PrefabInstance: {fileID: 3870551228289652663}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &763090611
 PrefabInstance:
@@ -2356,6 +2356,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1652569214}
+    - target: {fileID: 2330884415468033523, guid: bb7811828b321114ca5ef660568fd458, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330884415468033523, guid: bb7811828b321114ca5ef660568fd458, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811072, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2442,7 +2450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811073, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3870551228557811076, guid: bb7811828b321114ca5ef660568fd458, type: 3}
       propertyPath: m_Name
@@ -2686,7 +2694,7 @@ PrefabInstance:
     - target: {fileID: 7606666028574707769, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
       propertyPath: deathUI
       value: 
-      objectReference: {fileID: 269208118}
+      objectReference: {fileID: 659200361}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
 --- !u!114 &5015243941691123079 stripped

@@ -18,7 +18,7 @@ namespace Player
         [SerializeField] private AudioClip pulseClip;
         
         [Header("UI")] 
-        public Canvas deathUI;
+        public CanvasGroup deathUI;
         public Image deathBG;
         public ParticleSystem blood;
         public GameObject rootz;
@@ -40,7 +40,7 @@ namespace Player
                 var prev = _health;
                 _health = Math.Clamp(value, 0, maxHealth);
                 
-                // Debug.Log($"health: {_health}");
+                Debug.Log($"health: {_health}/{maxHealth}");
                 
                 HealthUI.Current.SetAmount(_health / maxHealth);
                 
@@ -52,6 +52,8 @@ namespace Player
                     PlayerSounds.Current.Death();
                     DialoguesController.Current.ClearDialogues();
                     DialoguesController.Current.Next();
+                    
+                    
                     rootz.SetActive(false);
 
                     deathBG.DOFade(0, 0);
@@ -86,14 +88,14 @@ namespace Player
 
         private void Start()
         {
-            deathUI.enabled = false;
+            deathUI.alpha = 0;
+            deathUI.gameObject.SetActive(false);
         }
 
         public void GotHit(float amount)
         {
             if(dead) return;
             Health -= amount;
-            
         }
 
         private AttackType c;
@@ -123,7 +125,8 @@ namespace Player
 
         public void EndDeath()
         {
-            deathUI.enabled = true;
+            deathUI.gameObject.SetActive(true);
+            deathUI.DOFade(1, 0.5f).SetDelay(1f);
         }
         
         public void EndAttack()
