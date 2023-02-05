@@ -110,8 +110,7 @@ public class Enemy : MonoBehaviour
 
     public void GotHit(float amount=0)
     {
-        Debug.Log("Enemy hit!");
-        
+
         if(dead) return;
 
         health -= amount;

@@ -19,6 +19,10 @@ namespace UI
         {
             base.Awake();
             canvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        private void Start()
+        {
             Hide();
         }
 

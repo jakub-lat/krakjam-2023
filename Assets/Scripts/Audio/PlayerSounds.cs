@@ -1,7 +1,9 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using Player;
 using UnityEngine;
 using Utils;
+using Random = UnityEngine.Random;
 
 namespace Audio
 {
@@ -21,6 +23,21 @@ namespace Audio
 
         private bool isStopping = false;
 
+        private float bVolume=1;
+
+        private void Start()
+        {
+            bVolume = source.volume;
+        }
+
+        void Randomize()
+        {
+            source.pitch = Random.Range(0.9f, 1.1f);
+            source.volume = Random.Range(bVolume-0.1f, bVolume+0.1f);
+            source.panStereo = Random.Range(-0.05f, 0.05f);
+        }
+        
+
         public void StartWalking()
         {
             return;
@@ -31,6 +48,7 @@ namespace Audio
         
         public void WalkStep()
         {
+            Randomize();
             source.PlayOneShot(walkStep);
         }
 
@@ -51,6 +69,7 @@ namespace Audio
 
         public void Weapon(AttackType type)
         {
+            Randomize();
             source.PlayOneShot(type == AttackType.Strong ? weaponHeavy : weaponLight);
         }
 
@@ -66,11 +85,13 @@ namespace Audio
 
         public void Jump()
         {
+            Randomize();
             source.PlayOneShot(jump);
         }
 
         public void Land()
         {
+            Randomize();
             source.PlayOneShot(land);
         }
     }

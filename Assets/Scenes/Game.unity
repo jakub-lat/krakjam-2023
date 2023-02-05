@@ -260,6 +260,134 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3870551228557811073, guid: bb7811828b321114ca5ef660568fd458, type: 3}
   m_PrefabInstance: {fileID: 3870551228289652663}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &298188655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298188657}
+  - component: {fileID: 298188656}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &298188656
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298188655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 78ad93306accc8948a8c13583339c288, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.592
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 97
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &298188657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298188655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 171.8128, y: -26.93154, z: -0.15474378}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &348513987
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,17 +537,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7405398460510721673, guid: dbaaaf84821c92d4e834527a68a98bde, type: 3}
   m_PrefabInstance: {fileID: 1971632628}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &471783711 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4225434214640964583, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-  m_PrefabInstance: {fileID: 5015243941691123078}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &536614211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1089,17 +1206,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b025909b5f1c06841a7a4e53eece2005, type: 3}
---- !u!114 &1446064034 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4882544700382427671, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-  m_PrefabInstance: {fileID: 5015243941691123078}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1489237740 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5285140559998082161, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
@@ -1556,11 +1662,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1873652945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5979222770740493729, guid: 29bbfc9be2cd127419aa1fd74f0bee55, type: 3}
-  m_PrefabInstance: {fileID: 5015243941691123078}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1971632628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1979,102 +2080,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1362046036847409967, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: 'It''s impossible, it can''t be true! We and they are connected... '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801238173481, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].timeout
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801238173481, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: This glowing root. It leads to my destination.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801396955382, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].timeout
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801396955382, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: Finally, some decent weapons! I'll take it, and it will certainly come
-        in handy later.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801694333279, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].personName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4426564801694333279, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: I can smell the musty stench.... It's time to prepare for the fight.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: My child! These monsters have devoured him! What am I supposed to do
-        now?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[1].contentText
-      value: Silence her! Let her stop whining!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[2].contentText
-      value: People! Listen to me.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[3].contentText
-      value: What do you know there, old rascal?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[4].contentText
-      value: I'm following in the footsteps of the Monsters. There is nothing else
-        left in my life.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[5].contentText
-      value: My last chance is also your last chance.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[6].contentText
-      value: And run yourself into the hands of these creatures.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[7].contentText
-      value: You do not know what you are saying. I am looking for the Root of the
-        Monsters. That's where they get their energy from.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[8].contentText
-      value: We all know that we are affected by the impulse of the Root of Life,
-        but these Monsters? What do they have to do with it?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[9].contentText
-      value: Each of them is connected to a root similar to ours. This holds the
-        remnants of my hope.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4658716767556211502, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[10].contentText
-      value: Duty calls me, as long as I stay on my feet. Farewell, without a shadow
-        of regret, strangers. Be well!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083828496160685075, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].timeout
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083828496160685075, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: dialogues.Array.data[0].contentText
-      value: ' I feel like I''m overflowing with energy, but also the monsters seem
-        stronger....'
-      objectReference: {fileID: 0}
     - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: source
       value: 
       objectReference: {fileID: 1489237740}
-    - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: letterAudio
-      value: 
-      objectReference: {fileID: 8300000, guid: ea37e47b9bcb8874dbaa9cf6aeb250d1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
 --- !u!1001 &2138000710810580700
@@ -2262,61 +2271,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3875833560381569218, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 31.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560381569218, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560381569218, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560381569229, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: caf53566af4c02d4a8c90e81ca333a08, type: 3}
-    - target: {fileID: 3875833560381569229, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560394010518, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 330.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560394010518, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 180.01062
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833560519919873, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+    - target: {fileID: 2280065914198333641, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833561107522772, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 21.0871
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833561107522772, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 4.695999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: header
-      value: 
-      objectReference: {fileID: 471783711}
-    - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: content
-      value: 
-      objectReference: {fileID: 1446064034}
-    - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 1873652945}
-    - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: dialogueDisplayers.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3875833561325050614, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
       propertyPath: dialogueDisplayers.Array.data[0]
@@ -2414,25 +2371,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3875833561796798525, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 8099672771453537767, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099672771453537767, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
+      propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833562205643481, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: caf53566af4c02d4a8c90e81ca333a08, type: 3}
-    - target: {fileID: 3875833562205643481, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833562205643481, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3875833562205643486, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9819e0d6b2d0f4da9f4935fcc47772, type: 3}
