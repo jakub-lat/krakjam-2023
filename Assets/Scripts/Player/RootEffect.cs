@@ -70,6 +70,8 @@ namespace Player
             startX = pos.x;
             
             ssc.BakeMesh();
+            
+            DOTween.SetTweensCapacity(1024, 1024);
         }
 
         private void Pulse()
@@ -93,8 +95,15 @@ namespace Player
                 
                 ssc.spline.SetPosition(0, transform.InverseTransformPoint(new Vector2(pos.x, pos.y + rootBottomYOffset)));
             }
+
+            if (tween != null)
+            {
+                tween.Kill();
+            }
             
             tween = light.transform.DOMove(endPos, animDuration)
+                .SetUpdate(true)
+                .SetLink(gameObject)
                 .OnComplete(() => { tween = null; });
             
             SpriteShapeFix();

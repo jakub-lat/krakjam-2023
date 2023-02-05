@@ -52,7 +52,7 @@ MonoBehaviour:
   rootTopYOffset: -1.5
   rootBottomYOffset: -12
   pointHeight: 0.7
-  pointTangentScale: 7
+  pointTangentScale: 8
   animDuration: 1.2
   interval: 0
   ssc: {fileID: 7686366008889601639}
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.74
-  m_PointLightOuterRadius: 3.99
+  m_PointLightOuterRadius: 6.54
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -250,7 +250,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 818e2b99eaa188e4dac46e5e8a0ba8f2, type: 3}
+  - {fileID: 21300000, guid: e14b8a50470529a40be9cec65790ce6e, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
@@ -260,8 +260,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 58.05345, y: -30.095688, z: 0}
-    m_Extent: {x: 19.83227, y: 21.533772, z: 0}
+    m_Center: {x: 58.698574, y: -30.209007, z: 0}
+    m_Extent: {x: 15.3241005, y: 21.320724, z: 0}
 --- !u!114 &7686366008889601639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 11400000, guid: 045bc006618a0eb4b91b29397eefda8d, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: c9453989771c7c049b486c6373f842c1, type: 2}
   m_FillPixelPerUnit: 10
   m_StretchTiling: 0
   m_SplineDetail: 8
