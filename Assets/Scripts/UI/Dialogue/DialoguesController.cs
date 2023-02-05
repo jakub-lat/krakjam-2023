@@ -59,7 +59,7 @@ public class DialoguesController : MonoSingleton<DialoguesController>
             displayer.header.text = current.personName;
             displayer.content.text = current.contentText;
 
-            hideTimer = current.timeout;
+            hideTimer = current.voiceover ? current.voiceover.length : current.timeout;
             hidden = false;
 
             if (current.voiceover != null && displayer.src != null)

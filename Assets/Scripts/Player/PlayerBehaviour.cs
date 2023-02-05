@@ -72,6 +72,7 @@ namespace Player
         }
 
 
+        
         private RootEffect rootEffect;
 
         protected override void Awake()
