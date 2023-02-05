@@ -33,7 +33,7 @@ namespace Player
                 var prev = _health;
                 _health = Math.Clamp(value, 0, maxHealth);
                 
-                Debug.Log($"health: {_health}");
+                // Debug.Log($"health: {_health}");
                 
                 HealthUI.Current.SetAmount(_health / maxHealth);
                 
