@@ -105,7 +105,7 @@ public class Enemy : MonoBehaviour
     {
         dead = true;
         anim.SetTrigger("Death");
-        rootEffect.enabled = false;
+        rootEffect.gameObject.SetActive(false);
     }
 
     public void GotHit(float amount=0)
