@@ -18198,7 +18198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3775550346891534162, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.15
+      value: 16.44
       objectReference: {fileID: 0}
     - target: {fileID: 3775550346891534162, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18273,8 +18273,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
-      propertyPath: dialogues.Array.data[0].personName
+      propertyPath: dialogues.Array.data[0].voiceover
       value: 
+      objectReference: {fileID: 8300000, guid: 4377832f21c77504bb6a587bbd719a46, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].personName
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
@@ -23861,44 +23865,88 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: e3acfca6c28de0a44ad18f2e8b6a9cbe, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[1].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 85965abdc50e2f64f81b44912bfa7472, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[2].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: c4876eb93508b994795223478acdc568, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[3].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b3e1b24cdfdf0c4ab295fa9516e7fae, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[4].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: c87ad86b74fdd634f980215739f06630, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[5].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 7def8bd35a597fc468f0ae34ae37eb3b, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[6].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: ed19e3f109c51bf4eaf038a6d5f1cc92, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[7].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0318c76923e1fe14898192ceb1bf069d, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[8].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ed8c936d2f30a54cb5cca6873d4656a, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[9].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f02666f59755284d8c38921d944c17d, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
-      value: Matka
+      value: Woman
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[10].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f112330c3d2041498e7b7ef11cc8309, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[1].personName
-      value: Lud
+      value: Crowd
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[2].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[3].personName
-      value: Lud
+      value: Crowd
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[4].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[5].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[6].personName
-      value: Lud
+      value: Crowd
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[7].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[8].personName
-      value: Lud
+      value: Crowd
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[9].personName
-      value: Ty
+      value: You
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].contentText
