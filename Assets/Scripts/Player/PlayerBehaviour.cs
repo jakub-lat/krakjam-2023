@@ -60,6 +60,8 @@ namespace Player
                     deathBG.DOFade(0, 0);
                     deathBG.DOFade(1, 5);
                     
+                    PlayerMovement.Current.Death();
+                    
                     
                     MusicController.Current.Switch(MusicType.Outro);
                 }
