@@ -14092,6 +14092,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 6495d4ac9ba0c01488d4207a82f09100, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
       value: Konrad
       objectReference: {fileID: 0}
@@ -16406,6 +16410,10 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[10].timeout
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 47841348b10ccbb40ac59fc3c7924bff, type: 3}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
       value: Ty
@@ -20221,6 +20229,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 1dc3b7e05524d204eaac756ef4f951b6, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
       value: Ty
       objectReference: {fileID: 0}
@@ -20919,6 +20931,10 @@ PrefabInstance:
         I unnecessarily went on this dangerous walk, there was little time left.
         I hope that at least this spear will be useful to someone in ne-
       objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: letterVoiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 4747a14f713636b4ea507a2dcf05ce14, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
 --- !u!4 &4246020122374909826 stripped
@@ -22528,6 +22544,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
+      propertyPath: dialogues.Array.data[0].voiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ee8e95ced62a96469178fcd5eeedce9, type: 3}
+    - target: {fileID: 3822536978355439504, guid: 7155903802cd06842b7660dc574e1865, type: 3}
       propertyPath: dialogues.Array.data[0].personName
       value: Ty
       objectReference: {fileID: 0}
@@ -23450,6 +23470,10 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: letterVoiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 924be26463f31f4498d196f4fdaec478, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
 --- !u!4 &7620845001277356664 stripped
@@ -23877,6 +23901,10 @@ PrefabInstance:
 
         XX'
       objectReference: {fileID: 0}
+    - target: {fileID: 130063940699132455, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
+      propertyPath: letterVoiceover
+      value: 
+      objectReference: {fileID: 8300000, guid: 606e85092820e5a4695edf73b2212d23, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60656418ec9c2a34282a132cdb1e7513, type: 3}
 --- !u!4 &8095794450355062296 stripped

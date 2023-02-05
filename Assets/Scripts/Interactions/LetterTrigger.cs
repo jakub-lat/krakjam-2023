@@ -8,6 +8,7 @@ namespace Interactions
     {
         [SerializeField, TextArea] private string content;
         [SerializeField] private AudioClip letterAudio;
+        [SerializeField] private AudioClip letterVoiceover;
         [SerializeField] private AudioSource source;
 
         protected override string InteractionText => "Read letter";
@@ -18,6 +19,7 @@ namespace Interactions
             if (letterAudio != null)
             {
                 source.PlayOneShot(letterAudio);
+                source.PlayOneShot(letterVoiceover);
             }
         }
     }
