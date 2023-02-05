@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8671162575559696197, guid: 9fd154bb3f06bd94d8a9ccfeaf4ec3ee, type: 3}
       propertyPath: m_Name
-      value: ConcreteRight
+      value: ConcreteRight Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671162575559696197, guid: 9fd154bb3f06bd94d8a9ccfeaf4ec3ee, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd154bb3f06bd94d8a9ccfeaf4ec3ee, type: 3}

@@ -2,7 +2,6 @@
 using Audio;
 using DG.Tweening;
 using UI;
-using Unity.UI;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils;
@@ -106,7 +105,9 @@ namespace Player
         {
             if (gotHit || attacking) return false;
             c = type;
-            anim.SetTrigger("Attack");
+            
+            if(type == AttackType.Weak) anim.SetTrigger("Attack");
+            else anim.SetTrigger("AttackHard");
             return true;
         }
 
