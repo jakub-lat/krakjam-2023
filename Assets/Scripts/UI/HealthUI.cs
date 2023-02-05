@@ -4,7 +4,6 @@ using Utils;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using log4net.Appender;
 
 namespace UI
 {
