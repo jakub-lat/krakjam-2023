@@ -2299,6 +2299,10 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[8].displayerIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
+      propertyPath: content
+      value: lorem ipsum dolor sit amet
+      objectReference: {fileID: 0}
     - target: {fileID: 6250466223355090232, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068

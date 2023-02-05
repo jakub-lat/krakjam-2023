@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UI;
 using UI.Dialogue;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -72,7 +73,11 @@ public class DialoguesController : MonoSingleton<DialoguesController>
             Next();
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.E)) Next();
+        if (!LetterController.Current.Visible && !InteractionController.Current.InteractionAvailable 
+                                              && (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.E)))
+        {
+            Next();
+        }
     }
 
     public void Next()
