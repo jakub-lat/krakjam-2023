@@ -81,12 +81,18 @@ namespace Player
             Health -= amount;
         }
 
+        private AttackType c;
         public bool Attack(AttackType type)
         {
             if (gotHit || attacking) return false;
+            c = type;
             anim.SetTrigger("Attack");
-            PlayerSounds.Current.Weapon(type);
             return true;
+        }
+
+        public void RightMomentForAttackSound()
+        {
+            PlayerSounds.Current.Weapon(c);
         }
 
         private void OnPulse()
