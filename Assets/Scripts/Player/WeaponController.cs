@@ -43,10 +43,10 @@ namespace Player
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Switch(1);
-            }
+            // if (Input.GetKeyDown(KeyCode.Alpha1))
+            // {
+            //     Switch(1);
+            // }
         }
     }
 }

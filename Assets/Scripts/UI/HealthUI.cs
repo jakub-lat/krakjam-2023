@@ -38,7 +38,7 @@ namespace UI
             }
 
             Debug.Log("Updating healthbar");
-            isAnimating = true;
+            isAnimating = true; 
             tween = image.DOFillAmount(fillAmount, 0.2f).OnComplete(() =>
             {
                 isAnimating = false;
