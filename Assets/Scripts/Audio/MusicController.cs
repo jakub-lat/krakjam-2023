@@ -31,12 +31,17 @@ namespace Audio
                 x.loop = true;
                 x.Play();
             }
+
+            sources[(int)currentIndex].volume = 1;
+            
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += (scene, _) => OnSceneChange(scene.name);
             OnSceneChange(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
 
         public void Switch(MusicType index)
         {
+            if (index == currentIndex) return;
+            
             Debug.Log($"Switching music to {index}");
 
             foreach (var x in sources.Where((x, i) => i != (int)currentIndex))
