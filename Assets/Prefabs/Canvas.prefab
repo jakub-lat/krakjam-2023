@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 3875833561458121832}
+  healBlinkColor: {r: 0.107333556, g: 0.5406988, b: 0.8490566, a: 1}
 --- !u!1 &3875833561796798525
 GameObject:
   m_ObjectHideFlags: 0

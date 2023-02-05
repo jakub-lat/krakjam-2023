@@ -10,9 +10,18 @@ namespace UI
     public class HealthUI : MonoSingleton<HealthUI>
     {
         [SerializeField] private Image image;
+        [SerializeField] private Color healBlinkColor;
 
         private bool isAnimating = false;
         private TweenerCore<float, float, FloatOptions> tween;
+
+        private Color defaultColor;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            defaultColor = image.color;
+        }
 
         public void SetAmount(float fillAmount)
         {
@@ -35,6 +44,14 @@ namespace UI
                 isAnimating = false;
                 tween = null;
             });
+
+            if (fillAmount > image.fillAmount)
+            {
+                image.DOColor(healBlinkColor, 0.5f).SetEase(Ease.InCubic).OnComplete(() =>
+                {
+                    image.DOColor(defaultColor, 0.5f).SetEase(Ease.OutCubic).SetDelay(0.5f);
+                });
+            }
         }
     }
 }

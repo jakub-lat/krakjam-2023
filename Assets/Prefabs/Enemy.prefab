@@ -1784,6 +1784,10 @@ PrefabInstance:
       propertyPath: interval
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5543976341299631254, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
+      propertyPath: rootTopYOffset
+      value: -1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6493198186595665454, guid: 87c1709af9d8d6c419c490cbbfa5bf48, type: 3}
       propertyPath: m_Color.b
       value: 0.10980392
