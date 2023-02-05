@@ -20,6 +20,8 @@ namespace Audio
     {
         [SerializeField] private List<AudioSource> sources;
 
+        private List<float> musicVolumes = new();
+
         private MusicType currentIndex;
         
         private void Start()
@@ -27,6 +29,7 @@ namespace Audio
             DontDestroyOnLoad(gameObject);
             foreach (var x in sources)
             {
+                musicVolumes.Add(x.volume);
                 x.volume = 0;
                 x.loop = true;
                 x.Play();
@@ -50,7 +53,7 @@ namespace Audio
             }
             
             sources[(int)currentIndex].DOFade(0, 0.5f);
-            sources[(int)index].DOFade(1, 0.5f);
+            sources[(int)index].DOFade(musicVolumes[(int)currentIndex], 0.5f);
             currentIndex = index;
         }
 
