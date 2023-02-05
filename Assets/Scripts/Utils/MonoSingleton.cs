@@ -11,7 +11,8 @@ namespace Utils
             if (Current != null)
             {
                 Debug.LogError($"An instance of {typeof(T).Name} already exists!");
-                Destroy(this);
+                Destroy(gameObject);
+                return;
             }
 
             Current = (T)this;
