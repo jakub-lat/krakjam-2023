@@ -749,7 +749,7 @@ MonoBehaviour:
   maxHealth: 100
   pulseHealthBoost: 6
   source: {fileID: 4154051034745347787}
-  pulseClip: {fileID: 8300000, guid: 6ac24838a83d41b47947293c465bda1c, type: 3}
+  pulseClip: {fileID: 8300000, guid: 7d74b97091ac96c459ed73cf67648092, type: 3}
   deathUI: {fileID: 0}
   deathBG: {fileID: 0}
   blood: {fileID: 1245594823821161989}
