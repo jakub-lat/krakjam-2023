@@ -7,6 +7,6 @@ namespace UI.Dialogue
     {
         public Text header;
         public Text content;
-
+        public AudioSource src;
     }
 }

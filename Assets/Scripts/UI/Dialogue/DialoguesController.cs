@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Codice.CM.Common.Merge;
 using UI;
 using UI.Dialogue;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utils;
@@ -23,6 +25,7 @@ public class DialogueElement
     public string contentText;
     public float timeout = 1.5f;
     public int displayerIndex;
+    public AudioClip voiceover=null;
 }
 
 
@@ -58,6 +61,11 @@ public class DialoguesController : MonoSingleton<DialoguesController>
 
             hideTimer = current.timeout;
             hidden = false;
+
+            if (current.voiceover != null && displayer.src != null)
+            {
+                displayer.src.PlayOneShot(current.voiceover);
+            }
         }
         else
         {
