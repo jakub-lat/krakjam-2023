@@ -2080,14 +2080,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1694034825769231885, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: Priority
-      value: 166
-      objectReference: {fileID: 0}
-    - target: {fileID: 1694034825769231885, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.942
-      objectReference: {fileID: 0}
     - target: {fileID: 7620845001277356670, guid: 9545766d2133ea049af187eb5f6138a1, type: 3}
       propertyPath: source
       value: 
