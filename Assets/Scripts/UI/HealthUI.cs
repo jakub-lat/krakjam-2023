@@ -16,6 +16,12 @@ namespace UI
 
         public void SetAmount(float fillAmount)
         {
+            if (tween != null && !tween.IsPlaying())
+            {
+                isAnimating = false;
+                tween = null;
+            }
+            
             if (isAnimating)
             {
                 tween.ChangeEndValue(fillAmount, true);
